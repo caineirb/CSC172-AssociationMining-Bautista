@@ -1,7 +1,7 @@
 # CSC172 Association Rule Mining Project Progress Report
-**Student:** [Your Name], [ID]  
-**Date:** [Progress Submission Date]  
-**Repository:** https://github.com/[username]/CSC172_AssociationMining  
+**Student:** Caine Ivan R. Bautista, 2022-0378
+**Date:** December 14, 2025  
+**Repository:** https://github.com/caineirb/CSC172-AssociationMining-Bautista
 
 ## 📊 Current Status
 | Milestone | Status | Notes |
@@ -26,7 +26,6 @@ Transaction 2: ['yogurt', 'whole milk', 'rolls/buns']
 
 
 ## 2. EDA Progress
-
 **Key Findings (so far):**
 ![Item Frequency Distribution](results/item_frequencies.png)
 - Top 5 items: whole milk(25.3%), other vegetables(19.1%), rolls/buns(17.4%)
