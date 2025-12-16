@@ -14,6 +14,7 @@
 
 
 ## 1. Dataset Progress
+### Transaction 1:
 - **Total transactions:** 5,140,889
 - **Unique items:** 24 (support > 0.05)
 - **Matrix size:** 5,140,889 transactions × 24 items (29.17% density)
@@ -21,6 +22,14 @@
   * Grouping action_logs by ['assignment_log_id', 'problem_id']
   * Binning applied (9 categories)
   * Basketing applied (7 baskets)
+  * One-hot encoding
+  * Infrequent item filtering (support > 0.05)
+### Transaction 2:
+- **Total transactions:** 485,727
+- **Unique items:** 
+- **Matrix size:** 485,727 transactions × 6 items ( density)
+- **Preprocessing applied:** 
+  * Grouping action_logs by ['assignment_log_id']
   * One-hot encoding
   * Infrequent item filtering (support > 0.05)
 
