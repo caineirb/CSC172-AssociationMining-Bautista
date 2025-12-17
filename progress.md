@@ -5,15 +5,15 @@
 
 ## 📊 Current Status
 | Milestone | Status | Notes |
-|-----------|--------|-------|
+| - | - | - |
 | Dataset Preparation | ✅ Completed | More than 5 million transactions processed |
 | Data Preprocessing | ✅ Completed | Ensure proper memory management and saving dataframes after processing |
 | EDA & Visualization | ✅ Completed | Visualized [Item support, Co-occurrence heatmap, Support vs Confidence, Support vs Lift] |
 | Apriori Implementation | ✅ Completed | Done |
 | Rule Evaluation | ✅ Completed | Done |
 
-
 ## 1. Dataset Progress
+The dataset used is not a transactional dataset as its own, it is a record of various actions and descriptions of items that are just connected by relationship tables, thus, data cleaning is minimal and feature engineering is heavily used to construct the necessary dataset for specific transaction analysis.
 ### Transaction 1:
 - **Total transactions:** 5,140,889
 - **Unique items:** 24 engineered items
@@ -32,7 +32,7 @@
 - **Sample transaction preview:** 
 
 | transaction_id | values | 
-|----------------|--------|
+| - | - |
 | 1EZQH1WY9H_1R8PA6HFZW | [no_hints, few_wrongs, slow, answer_req, no_explanation, correct_after_help, algebra] |
 | 12F78MMP2T_O6T088UQ | [no_hints, no_wrongs, medium, no_answer, no_explanation, correct_first_try, other] |
 | 1T3X6XCIMA_MV8V6YRBG | [no_hints, no_wrongs, medium, no_answer, no_explanation, gave_up, open] |
@@ -55,7 +55,7 @@
 - **Sample transaction preview:** 
 
 | transaction_id | values | 
-|----------------|--------|
+| - | - |
 | 1KPCIEDF9V | [high_score, typical_help, low_wrongs, high_completion, med_problems, low_struggle, low_effort] |
 | 21YMFN3ZCZ | [high_score, typical_help, low_wrongs, high_completion, many_problems, low_struggle, low_effort] |
 | 29FO15HZJY | [low_score, high_help, low_wrongs, high_completion, few_problems, med_struggle, med_effort] |
@@ -81,7 +81,7 @@
 - **Sample transaction preview:**
 
 | transaction_id | values | 
-|----------------|--------|
+| - | - |
 | YKLKRCDDM | [rare_hints, low_help, no_explanation, some_answer_req, high_success, help_first, no_self_correction, elementary, unknown] |
 | 1857XD6M3P | [rare_hints, low_help, no_explanation, some_answer_req, low_success, tries_before_help, no_self_correction, elementary, unknown] |
 | ZEP44HUK0 | [rare_hints, low_help, no_explanation, some_answer_req, low_success, tries_before_help, self_corrects, elementary, unknown] |
@@ -115,11 +115,11 @@
 
 ## 3. Challenges Encountered & Solutions
 | Issue | Status | Resolution |
-|-------|--------|------------|
+| - | - | - |
 | Memory usage due to large dataset | ✅ Fixed | Ensure proper memory management and saving dataframes after processing |
 | Memory usage during Apriori | ✅ Fixed | Progressive support levels + low_memory mode |
 | Large itemset generation | ✅ Fixed | Limited max_len to 3-itemsets |
-| High-dimensional data | ✅ Fixed | Grouping then Binning (9 categories) + Basketing (7 patterns) |
+| High-dimensional data | ✅ Fixed | Drop rows based on unused value, Grouping, then Binning + Boolean Categories |
 
 ## 4. Next Steps (Before Final Submission)
 - [X] Code cleanup
