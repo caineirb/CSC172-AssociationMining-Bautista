@@ -1,0 +1,609 @@
+support,itemset,itemset_size
+0.9591657986933055,low_wrongs,1
+0.8692595398163053,high_completion,1
+0.8358583467474671,high_completion | low_wrongs,2
+0.6999573903986365,low_effort | low_wrongs,2
+0.6999573903986365,low_effort,1
+0.6999573903986365,low_struggle,1
+0.6999573903986365,low_struggle | low_wrongs,2
+0.699933718397879,typical_help,1
+0.6894470220623047,low_wrongs | typical_help,2
+0.6140043556481394,low_effort | typical_help,2
+0.6140043556481394,low_effort | low_wrongs | typical_help,3
+0.6062872834011931,high_completion | typical_help,2
+0.6041568033330177,high_completion | low_struggle,2
+0.6041568033330177,high_completion | low_struggle | low_wrongs,3
+0.6039674273269576,low_effort | low_struggle | low_wrongs,3
+0.6039674273269576,low_effort | low_struggle,2
+0.5981441151406117,high_completion | low_wrongs | typical_help,3
+0.5921314269482056,high_completion | low_effort | low_wrongs,3
+0.5921314269482056,high_completion | low_effort,2
+0.5836331786762617,low_score,1
+0.5636776820376859,low_struggle | low_wrongs | typical_help,3
+0.5636776820376859,low_struggle | typical_help,2
+0.5508001136256037,low_score | low_wrongs,2
+0.5345847931067134,low_effort | low_struggle | low_wrongs | typical_help,4
+0.5345847931067134,low_effort | low_struggle | typical_help,3
+0.5252343528074993,high_completion | low_effort | typical_help,3
+0.5252343528074993,high_completion | low_effort | low_wrongs | typical_help,4
+0.511220528359057,high_completion | low_effort | low_struggle | low_wrongs,4
+0.511220528359057,high_completion | low_effort | low_struggle,3
+0.48610453555534516,high_completion | low_struggle | low_wrongs | typical_help,4
+0.48610453555534516,high_completion | low_struggle | typical_help,3
+0.4833585834674747,high_completion | low_score,2
+0.4571300066281602,high_completion | low_effort | low_struggle | typical_help,4
+0.4571300066281602,high_completion | low_effort | low_struggle | low_wrongs | typical_help,5
+0.4570589906258877,high_completion | low_score | low_wrongs,3
+0.41636682132373826,high_score,1
+0.40836568506770193,high_score | low_wrongs,2
+0.3859009563488306,high_completion | high_score,2
+0.3787993561215794,high_completion | high_score | low_wrongs,3
+0.3631521636208692,low_effort | low_score,2
+0.3631521636208692,low_effort | low_score | low_wrongs,3
+0.3569500994224032,low_score | low_struggle | low_wrongs,3
+0.3569500994224032,low_score | low_struggle,2
+0.3563346274027081,high_score | typical_help,2
+0.35318625130196,few_problems,1
+0.3530678912981725,high_score | low_wrongs | typical_help,3
+0.34802575513682416,med_problems,1
+0.3435990909951709,low_score | typical_help,2
+0.34300729097623334,high_score | low_struggle,2
+0.34300729097623334,high_score | low_struggle | low_wrongs,3
+0.33680522677776725,high_score | low_effort | low_wrongs,3
+0.33680522677776725,high_score | low_effort,2
+0.3363791307641322,low_score | low_wrongs | typical_help,3
+0.33555061073761955,low_wrongs | med_problems,2
+0.33195246662247896,few_problems | low_wrongs,2
+0.33072152258308873,high_completion | high_score | typical_help,3
+0.32778619448915824,high_completion | high_score | low_wrongs | typical_help,4
+0.32487453839598524,high_completion | med_problems,2
+0.3186961461982767,high_score | low_effort | typical_help,3
+0.3186961461982767,high_score | low_effort | low_wrongs | typical_help,4
+0.317725594167219,high_completion | high_score | low_struggle | low_wrongs,4
+0.317725594167219,high_completion | high_score | low_struggle,3
+0.3134883060316258,high_completion | low_wrongs | med_problems,3
+0.311996969983903,high_score | low_struggle | typical_help,3
+0.311996969983903,high_score | low_struggle | low_wrongs | typical_help,4
+0.31019789792633273,high_score | low_effort | low_struggle | low_wrongs,4
+0.31019789792633273,high_score | low_effort | low_struggle,3
+0.3092746898967901,high_completion | high_score | low_effort | low_wrongs,4
+0.3092746898967901,high_completion | high_score | low_effort,3
+0.2987169775589433,many_problems,1
+0.2953082094498627,low_effort | low_score | typical_help,3
+0.2953082094498627,low_effort | low_score | low_wrongs | typical_help,4
+0.2947400814316826,high_score | low_effort | low_struggle | typical_help,4
+0.2947400814316826,high_score | low_effort | low_struggle | low_wrongs | typical_help,5
+0.29450336142410755,high_completion | many_problems,2
+0.29400624940819997,high_completion | high_score | low_effort | low_wrongs | typical_help,5
+0.29400624940819997,high_completion | high_score | low_effort | typical_help,4
+0.29376952940062495,low_effort | low_score | low_struggle,3
+0.29376952940062495,low_effort | low_score | low_struggle | low_wrongs,4
+0.2916627213332071,low_wrongs | many_problems,2
+0.2895795852665467,high_completion | high_score | low_struggle | low_wrongs | typical_help,5
+0.2895795852665467,high_completion | high_score | low_struggle | typical_help,4
+0.2876148092036739,high_completion | low_wrongs | many_problems,3
+0.2864312091657987,high_completion | low_score | low_struggle,3
+0.2864312091657987,high_completion | low_score | low_struggle | low_wrongs,4
+0.28536596913171103,high_completion | high_score | low_effort | low_struggle,4
+0.28536596913171103,high_completion | high_score | low_effort | low_struggle | low_wrongs,5
+0.28285673705141556,high_completion | low_effort | low_score,3
+0.28285673705141556,high_completion | low_effort | low_score | low_wrongs,4
+0.27556576081810435,high_completion | low_score | typical_help,3
+0.2724173847173563,high_completion | high_score | low_effort | low_struggle | low_wrongs | typical_help,6
+0.2724173847173563,high_completion | high_score | low_effort | low_struggle | typical_help,5
+0.2703579206514535,high_completion | low_score | low_wrongs | typical_help,4
+0.25927942429694156,few_problems | low_struggle,2
+0.25927942429694156,few_problems | low_struggle | low_wrongs,3
+0.2516807120537828,low_score | low_struggle | typical_help,3
+0.2516807120537828,low_score | low_struggle | low_wrongs | typical_help,4
+0.2498816399962125,few_problems | high_completion,2
+0.24666224789319194,low_effort | med_problems,2
+0.24666224789319194,low_effort | low_wrongs | med_problems,3
+0.2464255278856169,few_problems | low_effort | low_wrongs,3
+0.2464255278856169,few_problems | low_effort,2
+0.2446974718303191,med_problems | typical_help,2
+0.24133604772275352,low_wrongs | med_problems | typical_help,3
+0.23984471167503077,low_effort | low_score | low_struggle | low_wrongs | typical_help,5
+0.23984471167503077,low_effort | low_score | low_struggle | typical_help,4
+0.23965533566897074,low_struggle | low_wrongs | med_problems,3
+0.23965533566897074,low_struggle | med_problems,2
+0.2347552315121674,few_problems | high_completion | low_wrongs,3
+0.23312186345989963,few_problems | typical_help,2
+0.2312281033992993,high_completion | low_effort | low_score | typical_help,4
+0.2312281033992993,high_completion | low_effort | low_score | low_wrongs | typical_help,5
+0.22978411135309157,few_problems | low_score,2
+0.22817441530158128,few_problems | low_wrongs | typical_help,3
+0.22817441530158128,high_completion | med_problems | typical_help,3
+0.22741691127734115,high_completion | low_effort | med_problems,3
+0.22741691127734115,high_completion | low_effort | low_wrongs | med_problems,4
+0.2258545592273459,high_completion | low_effort | low_score | low_struggle,4
+0.2258545592273459,high_completion | low_effort | low_score | low_struggle | low_wrongs,5
+0.22516807120537827,high_completion | low_wrongs | med_problems | typical_help,4
+0.2241028311712906,high_completion | low_struggle | low_wrongs | med_problems,4
+0.2241028311712906,high_completion | low_struggle | med_problems,3
+0.22220907111069027,few_problems | low_effort | low_struggle,3
+0.22220907111069027,few_problems | low_effort | low_struggle | low_wrongs,4
+0.22211438310766027,many_problems | typical_help,2
+0.21993655903796988,low_wrongs | many_problems | typical_help,3
+0.21894233500615473,high_completion | many_problems | typical_help,3
+0.21683552693873687,high_completion | low_wrongs | many_problems | typical_help,4
+0.21607802291449674,low_effort | med_problems | typical_help,3
+0.21607802291449674,low_effort | low_wrongs | med_problems | typical_help,4
+0.21278761480920366,few_problems | low_score | low_wrongs,3
+0.20866868667739796,few_problems | low_effort | low_wrongs | typical_help,4
+0.20866868667739796,few_problems | low_effort | typical_help,3
+0.20784016665088534,low_effort | low_struggle | med_problems,3
+0.20784016665088534,low_effort | low_struggle | low_wrongs | med_problems,4
+0.20686961461982767,low_effort | low_wrongs | many_problems,3
+0.20686961461982767,low_effort | many_problems,2
+0.20322412650317204,high_completion | low_effort | low_wrongs | many_problems,4
+0.20322412650317204,high_completion | low_effort | many_problems,3
+0.2011409904365117,low_score | med_problems,2
+0.20102263043272417,low_struggle | low_wrongs | many_problems,3
+0.20102263043272417,low_struggle | many_problems,2
+0.2005491904175741,high_completion | low_effort | low_wrongs | med_problems | typical_help,5
+0.2005491904175741,high_completion | low_effort | med_problems | typical_help,4
+0.200028406400909,high_help,1
+0.199981062399394,med_struggle,1
+0.199981062399394,med_effort,1
+0.19860808635545876,low_wrongs | med_struggle,2
+0.19818199034182368,few_problems | low_struggle | low_wrongs | typical_help,4
+0.19818199034182368,few_problems | low_struggle | typical_help,3
+0.19806363033803617,low_wrongs | med_effort,2
+0.19803995833727867,high_completion | low_struggle | many_problems,3
+0.19803995833727867,high_completion | low_struggle | low_wrongs | many_problems,4
+0.1965249502887984,high_completion | low_score | low_struggle | low_wrongs | typical_help,5
+0.1965249502887984,high_completion | low_score | low_struggle | typical_help,4
+0.19257172616229523,high_completion | low_effort | low_struggle | med_problems,4
+0.19257172616229523,high_completion | low_effort | low_struggle | low_wrongs | med_problems,5
+0.19188523814032762,low_struggle | med_problems | typical_help,3
+0.19188523814032762,low_struggle | low_wrongs | med_problems | typical_help,4
+0.1911750781176025,low_score | low_wrongs | med_problems,3
+0.18925764605624468,few_problems | low_effort | low_struggle | typical_help,4
+0.18925764605624468,low_effort | low_wrongs | many_problems | typical_help,4
+0.18925764605624468,low_effort | many_problems | typical_help,3
+0.18925764605624468,few_problems | low_effort | low_struggle | low_wrongs | typical_help,5
+0.18719818199034183,high_help | low_wrongs,2
+0.1865353659691317,high_completion | med_effort,2
+0.18620395795852665,high_completion | low_effort | low_wrongs | many_problems | typical_help,5
+0.18620395795852665,high_completion | low_effort | many_problems | typical_help,4
+0.18558848593883154,high_completion | low_wrongs | med_effort,3
+0.1847126219108039,high_completion | low_effort | low_score | low_struggle | typical_help,5
+0.1847126219108039,high_completion | low_effort | low_score | low_struggle | low_wrongs | typical_help,6
+0.18440488590095636,high_completion | low_score | med_problems,3
+0.18378941388126124,low_effort | low_struggle | low_wrongs | med_problems | typical_help,5
+0.18378941388126124,low_effort | low_struggle | med_problems | typical_help,4
+0.18201401382444846,few_problems | high_completion | low_struggle | low_wrongs,4
+0.18201401382444846,few_problems | high_completion | low_struggle,3
+0.17955212574566803,high_completion | med_struggle,2
+0.17922071773506296,high_completion | low_struggle | med_problems | typical_help,4
+0.17922071773506296,high_completion | low_struggle | low_wrongs | med_problems | typical_help,5
+0.1783211817062778,high_completion | low_wrongs | med_struggle,3
+0.17614335763658745,high_completion | high_help,2
+0.17538585361234732,high_completion | low_score | low_wrongs | med_problems,4
+0.17391818956538208,low_effort | low_struggle | low_wrongs | many_problems,4
+0.17391818956538208,low_effort | low_struggle | many_problems,3
+0.1736104535555345,low_struggle | many_problems | typical_help,3
+0.1736104535555345,low_struggle | low_wrongs | many_problems | typical_help,4
+0.1711248934759966,high_completion | low_effort | low_struggle | low_wrongs | med_problems | typical_help,6
+0.1711248934759966,high_completion | low_effort | low_struggle | med_problems | typical_help,5
+0.1710775494744816,high_completion | low_struggle | low_wrongs | many_problems | typical_help,5
+0.1710775494744816,high_completion | low_struggle | many_problems | typical_help,4
+0.17095918947069405,high_completion | low_effort | low_struggle | many_problems,4
+0.17095918947069405,high_completion | low_effort | low_struggle | low_wrongs | many_problems,5
+0.16520689328662058,high_completion | high_help | low_wrongs,3
+0.16153773316920747,low_effort | low_struggle | low_wrongs | many_problems | typical_help,5
+0.16153773316920747,low_effort | low_struggle | many_problems | typical_help,4
+0.16149038916769246,few_problems | high_completion | low_effort,3
+0.16149038916769246,few_problems | high_completion | low_effort | low_wrongs,4
+0.15917053309345705,few_problems | high_completion | typical_help,3
+0.15900482908815453,high_completion | low_effort | low_struggle | many_problems | typical_help,5
+0.15900482908815453,high_completion | low_effort | low_struggle | low_wrongs | many_problems | typical_help,6
+0.15614051699649653,few_problems | high_completion | low_wrongs | typical_help,4
+0.15533566897074141,few_problems | low_score | low_struggle,3
+0.15533566897074141,few_problems | low_score | low_struggle | low_wrongs,4
+0.1535839409146861,high_help | low_score,2
+0.15263706088438594,low_score | many_problems,2
+0.15017517280560552,high_completion | low_score | many_problems,3
+0.14894422876621533,few_problems | low_effort | low_score | low_wrongs,4
+0.14894422876621533,few_problems | low_effort | low_score,3
+0.1487785247609128,few_problems | high_completion | low_score,3
+0.14768961272606762,few_problems | high_completion | low_effort | low_struggle | low_wrongs,5
+0.14768961272606762,few_problems | high_completion | low_effort | low_struggle,4
+0.14690843670106998,low_score | med_struggle,2
+0.14688476470031248,high_score | med_problems,2
+0.14683742069879746,low_score | low_wrongs | many_problems,3
+0.14607991667455733,high_score | many_problems,2
+0.14605624467379982,low_score | low_wrongs | med_struggle,3
+0.14482530063440963,high_score | low_wrongs | many_problems,3
+0.14449389262380458,high_completion | low_score | low_wrongs | many_problems,4
+0.14437553262001704,high_score | low_wrongs | med_problems,3
+0.14432818861850202,high_completion | high_score | many_problems,3
+0.14323927658365684,high_help | low_score | low_wrongs,3
+0.14312091657986933,high_completion | high_score | low_wrongs | many_problems,4
+0.14046965249502888,high_completion | high_score | med_problems,3
+0.13961746046775875,low_score | med_effort,2
+0.13848120443139855,few_problems | high_completion | low_effort | low_wrongs | typical_help,5
+0.13848120443139855,few_problems | high_completion | low_effort | typical_help,4
+0.13817346842155098,low_score | low_wrongs | med_effort,3
+0.1381024524192785,high_completion | high_score | low_wrongs | med_problems,4
+0.13717924438973583,few_problems | high_completion | low_score | low_wrongs,4
+0.1358062683458006,few_problems | high_completion | low_struggle | low_wrongs | typical_help,5
+0.1358062683458006,few_problems | high_completion | low_struggle | typical_help,4
+0.1329419562541426,high_completion | high_help | low_score,3
+0.13253953224126502,few_problems | low_score | typical_help,3
+0.1305984281791497,low_completion,1
+0.12984092415490958,few_problems | low_effort | low_score | low_struggle | low_wrongs,5
+0.12984092415490958,few_problems | low_effort | low_score | low_struggle,4
+0.12958053214657703,high_completion | low_score | med_struggle,3
+0.12891771612536693,few_problems | low_score | low_wrongs | typical_help,4
+0.1288467001230944,high_completion | low_score | low_wrongs | med_struggle,4
+0.12811286809961178,high_score | many_problems | typical_help,3
+0.12792349209355175,high_completion | low_score | med_effort,3
+0.1276394280844617,high_score | med_problems | typical_help,3
+0.12742638007764417,high_score | low_wrongs | many_problems | typical_help,4
+0.12735536407537165,high_completion | low_score | low_wrongs | med_effort,4
+0.1270002840640091,few_problems | high_completion | low_effort | low_struggle | low_wrongs | typical_help,6
+0.1270002840640091,few_problems | high_completion | low_effort | low_struggle | typical_help,5
+0.12659786005113152,high_completion | high_score | many_problems | typical_help,4
+0.12638481204431398,high_score | low_wrongs | med_problems | typical_help,4
+0.12593504402992142,high_completion | high_score | low_wrongs | many_problems | typical_help,5
+0.12522488400719628,low_effort | low_score | low_wrongs | med_problems,4
+0.12522488400719628,low_effort | low_score | med_problems,3
+0.12427800397689613,high_completion | high_help | low_score | low_wrongs,4
+0.12340213994886848,few_problems | high_score,2
+0.12323643594356595,low_completion | low_wrongs,2
+0.12221853991099328,high_completion | high_score | med_problems | typical_help,4
+0.12143736388599564,high_score | low_effort | low_wrongs | med_problems,4
+0.12143736388599564,high_score | low_effort | med_problems,3
+0.12105861187387558,high_completion | high_score | low_wrongs | med_problems | typical_help,5
+0.12049048385569548,high_score | low_struggle | low_wrongs | med_problems,4
+0.12049048385569548,high_score | low_struggle | med_problems,3
+0.11916485181327525,few_problems | high_score | low_wrongs,3
+0.11916485181327525,low_score | low_struggle | med_problems,3
+0.11916485181327525,low_score | low_struggle | low_wrongs | med_problems,4
+0.11857305179433766,high_score | low_struggle | many_problems,3
+0.11857305179433766,high_score | low_struggle | low_wrongs | many_problems,4
+0.11814695578070258,few_problems | low_effort | low_score | typical_help,4
+0.11814695578070258,few_problems | low_effort | low_score | low_wrongs | typical_help,5
+0.11788656377237004,high_score | low_effort | many_problems,3
+0.11788656377237004,high_score | low_effort | low_wrongs | many_problems,4
+0.11720007575040242,high_completion | high_score | low_struggle | many_problems,4
+0.11720007575040242,high_completion | high_score | low_struggle | low_wrongs | many_problems,5
+0.1170580437458574,low_score | med_problems | typical_help,3
+0.11625319572010226,high_completion | high_score | low_effort | many_problems,4
+0.11625319572010226,high_completion | high_score | low_effort | low_wrongs | many_problems,5
+0.11563772370040716,high_completion | high_score | low_effort | med_problems,4
+0.11563772370040716,high_completion | high_score | low_effort | low_wrongs | med_problems,5
+0.11551936369661964,high_completion | high_score | low_struggle | low_wrongs | med_problems,5
+0.11551936369661964,high_completion | high_score | low_struggle | med_problems,4
+0.11542467569358962,high_score | low_effort | low_wrongs | med_problems | typical_help,5
+0.11542467569358962,high_score | low_effort | med_problems | typical_help,4
+0.11495123567843954,low_score | low_wrongs | med_problems | typical_help,4
+0.11274973960799167,high_score | low_effort | low_wrongs | many_problems | typical_help,5
+0.11274973960799167,high_score | low_effort | many_problems | typical_help,4
+0.111779187576934,high_completion | low_effort | low_score | med_problems,4
+0.111779187576934,high_completion | low_effort | low_score | low_wrongs | med_problems,5
+0.11128207556102641,high_completion | high_score | low_effort | many_problems | typical_help,5
+0.11128207556102641,high_completion | high_score | low_effort | low_wrongs | many_problems | typical_help,6
+0.11104535555345138,high_score | low_struggle | many_problems | typical_help,4
+0.11104535555345138,high_score | low_struggle | low_wrongs | many_problems | typical_help,5
+0.11026417952845374,high_completion | high_score | low_effort | med_problems | typical_help,5
+0.11026417952845374,high_completion | high_score | low_effort | low_wrongs | med_problems | typical_help,6
+0.11014581952466622,high_score | low_effort | low_struggle | low_wrongs | med_problems,5
+0.11014581952466622,high_score | low_effort | low_struggle | med_problems,4
+0.1099801155193637,high_score | low_struggle | low_wrongs | med_problems | typical_help,5
+0.1099801155193637,high_score | low_struggle | med_problems | typical_help,4
+0.10981441151406117,high_completion | high_score | low_struggle | low_wrongs | many_problems | typical_help,6
+0.10981441151406117,high_completion | high_score | low_struggle | many_problems | typical_help,5
+0.10858346747467096,high_completion | low_score | low_struggle | low_wrongs | med_problems,5
+0.10858346747467096,high_completion | low_score | low_struggle | med_problems,4
+0.10775494744815832,low_completion | low_effort,2
+0.10775494744815832,low_completion | low_effort | low_wrongs,3
+0.10768393144588581,high_score | low_effort | low_struggle | low_wrongs | many_problems,5
+0.10768393144588581,high_score | low_effort | low_struggle | many_problems,4
+0.10721049143073573,few_problems | low_score | low_struggle | typical_help,4
+0.10721049143073573,few_problems | low_score | low_struggle | low_wrongs | typical_help,5
+0.10633462740270808,high_completion | high_score | low_effort | low_struggle | many_problems,5
+0.10633462740270808,high_completion | high_score | low_effort | low_struggle | low_wrongs | many_problems,6
+0.10595587539058801,high_completion | low_score | med_problems | typical_help,4
+0.10555345137771044,high_completion | high_score | low_struggle | low_wrongs | med_problems | typical_help,6
+0.10555345137771044,high_completion | high_score | low_struggle | med_problems | typical_help,5
+0.10522204336710539,high_completion | high_score | low_effort | low_struggle | low_wrongs | med_problems,6
+0.10522204336710539,high_completion | high_score | low_effort | low_struggle | med_problems,5
+0.10505633936180286,high_score | low_effort | low_struggle | low_wrongs | med_problems | typical_help,6
+0.10505633936180286,high_score | low_effort | low_struggle | med_problems | typical_help,5
+0.1041094593315027,high_completion | low_score | low_wrongs | med_problems | typical_help,5
+0.10394375532620018,few_problems | high_score | low_struggle,3
+0.10394375532620018,few_problems | high_score | low_struggle | low_wrongs,4
+0.10384906732317016,high_score | low_effort | low_struggle | low_wrongs | many_problems | typical_help,6
+0.10384906732317016,high_score | low_effort | low_struggle | many_problems | typical_help,5
+0.10342297130953508,few_problems | low_effort | low_score | low_struggle | low_wrongs | typical_help,6
+0.10342297130953508,few_problems | low_effort | low_score | low_struggle | typical_help,5
+0.10330461130574756,few_problems | low_completion,2
+0.10261812328377995,high_completion | high_score | low_effort | low_struggle | low_wrongs | many_problems | typical_help,7
+0.10261812328377995,high_completion | high_score | low_effort | low_struggle | many_problems | typical_help,6
+0.10110311523529969,few_problems | high_completion | high_score,3
+0.10065334722090712,low_effort | low_score | med_problems | typical_help,4
+0.10065334722090712,low_effort | low_score | low_wrongs | med_problems | typical_help,5
+0.10062967522014961,high_completion | high_score | low_effort | low_struggle | low_wrongs | med_problems | typical_help,7
+0.10062967522014961,high_completion | high_score | low_effort | low_struggle | med_problems | typical_help,6
+0.1005823312186346,few_problems | high_score | typical_help,3
+0.10017990720575704,low_completion | low_score,2
+0.099990531199697,high_struggle,1
+0.099990531199697,high_effort,1
+0.0999668591989395,very_high_help,1
+0.09925669917621438,few_problems | high_score | low_wrongs | typical_help,4
+0.0976943471262191,low_effort | low_score | low_struggle | med_problems,4
+0.0976943471262191,low_effort | low_score | low_struggle | low_wrongs | med_problems,5
+0.09757598712243158,few_problems | high_completion | high_score | low_wrongs,4
+0.09748129911940157,few_problems | high_score | low_effort,3
+0.09748129911940157,few_problems | high_score | low_effort | low_wrongs,4
+0.09719723511031152,few_problems | low_completion | low_wrongs,3
+0.0970078591042515,few_problems | high_completion | low_score | low_struggle,4
+0.0970078591042515,few_problems | high_completion | low_score | low_struggle | low_wrongs,5
+0.09577691506486129,low_completion | low_struggle | low_wrongs,3
+0.09577691506486129,low_completion | low_struggle,2
+0.09546917905501373,high_help | low_struggle,2
+0.09546917905501373,high_help | low_struggle | low_wrongs,3
+0.09492472303759114,med_struggle | typical_help,2
+0.09452229902471357,low_wrongs | med_struggle | typical_help,3
+0.09400151500804849,low_score | many_problems | typical_help,3
+0.09371745099895844,low_completion | low_score | low_wrongs,3
+0.0935754189944134,low_completion | typical_help,2
+0.09272322696714326,low_completion | low_effort | low_struggle,3
+0.09272322696714326,low_completion | low_effort | low_struggle | low_wrongs,4
+0.09251017896032572,low_score | low_wrongs | many_problems | typical_help,4
+0.0923681469557807,few_problems | high_score | low_effort | low_struggle,4
+0.0923681469557807,few_problems | high_score | low_effort | low_struggle | low_wrongs,5
+0.0923444749550232,high_completion | low_score | many_problems | typical_help,4
+0.09123189091942051,low_completion | low_wrongs | typical_help,3
+0.09111353091563298,high_help | med_effort,2
+0.09097149891108797,few_problems | high_score | low_struggle | typical_help,4
+0.09097149891108797,few_problems | high_score | low_struggle | low_wrongs | typical_help,5
+0.09090048290881546,high_completion | low_score | low_wrongs | many_problems | typical_help,5
+0.09075845090427043,high_help | low_wrongs | med_effort,3
+0.0905927468989679,high_completion | high_effort,2
+0.0905217308966954,few_problems | high_score | low_effort | typical_help,4
+0.0905217308966954,few_problems | high_score | low_effort | low_wrongs | typical_help,5
+0.09028501088912035,high_completion | low_effort | low_score | med_problems | typical_help,5
+0.09028501088912035,high_completion | low_effort | low_score | low_wrongs | med_problems | typical_help,6
+0.09019032288609033,med_effort | med_struggle,2
+0.0900719628823028,low_wrongs | med_effort | med_struggle,3
+0.08898305084745763,low_effort | low_score | many_problems,3
+0.08898305084745763,low_effort | low_score | low_wrongs | many_problems,4
+0.08869898683836758,low_completion | low_effort | low_wrongs | typical_help,4
+0.08869898683836758,low_completion | low_effort | typical_help,3
+0.08734968279518986,high_completion | low_effort | low_score | low_struggle | med_problems,5
+0.08734968279518986,high_completion | low_effort | low_score | low_struggle | low_wrongs | med_problems,6
+0.08697093078306979,high_completion | low_effort | low_score | many_problems,4
+0.08697093078306979,high_completion | low_effort | low_score | low_wrongs | many_problems,5
+0.08682889877852476,high_completion | very_high_help,2
+0.08637913076413219,low_score | very_high_help,2
+0.0858346747467096,few_problems | high_score | low_effort | low_struggle | low_wrongs | typical_help,6
+0.0858346747467096,few_problems | high_score | low_effort | low_struggle | typical_help,5
+0.08578733074519458,low_struggle | med_effort,2
+0.08578733074519458,low_struggle | low_wrongs | med_effort,3
+0.08555061073761955,high_completion | high_struggle,2
+0.08524287472777199,high_completion | high_help | med_effort,3
+0.08514818672474198,high_completion | med_struggle | typical_help,3
+0.08507717072246947,high_completion | high_help | low_wrongs | med_effort,4
+0.08500615472019694,few_problems | high_completion | high_score | low_struggle | low_wrongs,5
+0.08500615472019694,few_problems | high_completion | high_score | low_struggle,4
+0.08493513871792444,few_problems | low_completion | low_effort,3
+0.08493513871792444,few_problems | low_completion | low_effort | low_wrongs,4
+0.08479310671337942,high_completion | low_wrongs | med_struggle | typical_help,4
+0.0841066186914118,few_problems | high_completion | low_effort | low_score,4
+0.0841066186914118,few_problems | high_completion | low_effort | low_score | low_wrongs,5
+0.0834911466717167,high_completion | med_effort | med_struggle,3
+0.08344380267020168,high_completion | low_wrongs | med_effort | med_struggle,4
+0.0828993466527791,high_completion | low_struggle | low_wrongs | med_effort,4
+0.0828993466527791,high_completion | low_struggle | med_effort,3
+0.08252059464065903,low_wrongs | very_high_help,2
+0.08244957863838652,low_score | low_struggle | low_wrongs | many_problems,4
+0.08244957863838652,low_score | low_struggle | many_problems,3
+0.08237856263611401,high_completion | high_help | low_struggle,3
+0.08237856263611401,high_completion | high_help | low_struggle | low_wrongs,4
+0.08190512262096393,low_score | low_struggle | med_problems | typical_help,4
+0.08190512262096393,low_score | low_struggle | low_wrongs | med_problems | typical_help,5
+0.08190512262096393,few_problems | high_completion | high_score | typical_help,4
+0.08100558659217877,few_problems | low_completion | low_score,3
+0.08083988258687624,high_completion | low_score | low_struggle | low_wrongs | many_problems,5
+0.08083988258687624,high_completion | low_score | low_struggle | many_problems,4
+0.08079253858536123,high_effort | low_score,2
+0.08079253858536123,few_problems | high_completion | high_score | low_wrongs | typical_help,5
+0.08027175456869615,low_completion | low_effort | low_score,3
+0.08027175456869615,low_completion | low_effort | low_score | low_wrongs,4
+0.07970362655051605,high_struggle | low_score,2
+0.07873307451945838,low_effort | low_score | low_struggle | med_problems | typical_help,5
+0.07873307451945838,low_effort | low_score | low_struggle | low_wrongs | med_problems | typical_help,6
+0.07762049048385569,high_help | low_effort | low_wrongs,3
+0.07762049048385569,high_help | low_effort,2
+0.07754947448158318,low_completion | low_struggle | typical_help,3
+0.07754947448158318,low_completion | low_struggle | low_wrongs | typical_help,4
+0.07743111447779566,low_completion | low_effort | low_struggle | typical_help,4
+0.07743111447779566,low_completion | low_effort | low_struggle | low_wrongs | typical_help,5
+0.07738377047628066,few_problems | high_completion | high_score | low_effort | low_wrongs,5
+0.07738377047628066,few_problems | high_completion | high_score | low_effort,4
+0.07726541047249313,few_problems | low_completion | low_struggle,3
+0.07726541047249313,few_problems | low_completion | low_struggle | low_wrongs,4
+0.07726541047249313,few_problems | high_completion | low_score | typical_help,4
+0.076507906448253,low_effort | low_score | many_problems | typical_help,4
+0.076507906448253,low_effort | low_score | low_wrongs | many_problems | typical_help,5
+0.07560837041946786,few_problems | low_completion | low_score | low_wrongs,4
+0.0753479784111353,few_problems | high_completion | low_score | low_wrongs | typical_help,5
+0.07492188239750024,high_completion | low_effort | low_score | low_wrongs | many_problems | typical_help,6
+0.07492188239750024,low_effort | low_wrongs | med_struggle,3
+0.07492188239750024,low_effort | med_struggle,2
+0.07492188239750024,high_completion | low_effort | low_score | many_problems | typical_help,5
+0.07485086639522773,high_completion | low_score | very_high_help,3
+0.07451945838462266,few_problems | low_completion | low_effort | low_struggle | low_wrongs,5
+0.07451945838462266,few_problems | low_completion | low_effort | low_struggle,4
+0.07421172237477512,few_problems | high_completion | high_score | low_struggle | low_wrongs | typical_help,6
+0.07421172237477512,few_problems | high_completion | high_score | low_struggle | typical_help,5
+0.07395133036644257,few_problems | low_completion | typical_help,3
+0.07388031436417006,few_problems | high_completion | low_effort | low_score | low_struggle,5
+0.07388031436417006,few_problems | high_completion | low_effort | low_score | low_struggle | low_wrongs,6
+0.07380929836189755,few_problems | high_completion | high_score | low_effort | low_struggle | low_wrongs,6
+0.07380929836189755,few_problems | high_completion | high_score | low_effort | low_struggle,5
+0.07366726635735252,high_completion | low_score | low_struggle | med_problems | typical_help,5
+0.07366726635735252,high_completion | low_score | low_struggle | low_wrongs | med_problems | typical_help,6
+0.07269671432629486,high_help | med_struggle,2
+0.07257835432250734,high_completion | high_effort | low_score,3
+0.07250733832023483,high_completion | low_wrongs | very_high_help,3
+0.07245999431871981,few_problems | high_completion | high_score | low_effort | typical_help,5
+0.07245999431871981,few_problems | high_completion | high_score | low_effort | low_wrongs | typical_help,6
+0.07245999431871981,med_effort | typical_help,2
+0.07245999431871981,med_problems | med_struggle,2
+0.07229429031341729,low_wrongs | med_problems | med_struggle,3
+0.07227061831265978,high_help | low_wrongs | med_struggle,3
+0.07203389830508475,few_problems | low_completion | low_wrongs | typical_help,4
+0.07167881829372219,few_problems | high_help,2
+0.0711817062778146,low_score | low_wrongs | very_high_help,3
+0.07113436227629959,high_help | med_problems,2
+0.07092131426948206,low_wrongs | med_effort | typical_help,3
+0.07049521825584698,low_completion | low_score | low_struggle,3
+0.07049521825584698,high_completion | low_effort | low_score | low_struggle | low_wrongs | med_problems | typical_help,7
+0.07049521825584698,high_completion | low_effort | low_score | low_struggle | med_problems | typical_help,6
+0.07049521825584698,low_completion | low_score | low_struggle | low_wrongs,4
+0.07042420225357447,med_effort | med_problems,2
+0.07042420225357447,high_help | low_score | low_struggle,3
+0.07042420225357447,high_help | low_score | low_struggle | low_wrongs,4
+0.07018748224599944,few_problems | low_completion | low_effort | typical_help,4
+0.07018748224599944,few_problems | low_completion | low_effort | low_wrongs | typical_help,5
+0.06990341823690939,low_wrongs | med_effort | med_problems,3
+0.06916958621342675,high_completion | med_effort | typical_help,3
+0.06916958621342675,few_problems | high_completion | high_score | low_effort | low_struggle | low_wrongs | typical_help,7
+0.06916958621342675,few_problems | high_completion | high_score | low_effort | low_struggle | typical_help,6
+0.06864880219676167,high_help | low_score | med_effort,3
+0.06838841018842913,high_completion | low_wrongs | med_effort | typical_help,4
+0.06834106618691412,high_help | low_score | low_wrongs | med_effort,4
+0.06800965817630907,low_completion | low_score | typical_help,3
+0.06798598617555156,high_completion | med_effort | med_problems,3
+0.06789129817252154,low_completion | low_effort | low_score | low_struggle,4
+0.06789129817252154,low_completion | low_effort | low_score | low_struggle | low_wrongs,5
+0.06786762617176403,many_problems | med_effort,2
+0.06777293816873402,many_problems | med_struggle,2
+0.06772559416721902,low_wrongs | many_problems | med_struggle,3
+0.067678250165704,high_completion | low_wrongs | med_effort | med_problems,4
+0.067678250165704,low_wrongs | many_problems | med_effort,3
+0.06755989016191649,high_completion | many_problems | med_effort,3
+0.06746520215888648,high_completion | med_problems | med_struggle,3
+0.06741785815737146,high_completion | low_wrongs | many_problems | med_effort,4
+0.06734684215509895,high_completion | high_struggle | low_score,3
+0.06729949815358394,high_completion | low_wrongs | med_problems | med_struggle,4
+0.0670627781460089,high_help | low_wrongs | med_problems,3
+0.06694441814222138,high_completion | many_problems | med_struggle,3
+0.06689707414070638,high_completion | low_wrongs | many_problems | med_struggle,4
+0.06651832212858631,low_score | med_effort | med_struggle,3
+0.0664236341255563,low_score | low_wrongs | med_effort | med_struggle,4
+0.06630527412176877,high_completion | high_help | med_problems,3
+0.06623425811949626,low_effort | low_score | low_struggle | low_wrongs | many_problems,5
+0.06623425811949626,low_effort | low_score | low_struggle | many_problems,4
+0.06602121011267872,few_problems | high_completion | low_effort | low_score | low_wrongs | typical_help,6
+0.06602121011267872,few_problems | high_completion | low_effort | low_score | typical_help,5
+0.06599753811192122,low_completion | low_score | low_wrongs | typical_help,4
+0.06573714610358868,high_completion | high_help | med_struggle,3
+0.06566613010131617,few_problems | high_help | low_wrongs,3
+0.0653347220907111,high_completion | high_help | low_wrongs | med_struggle,4
+0.06483761007480353,few_problems | low_completion | low_effort | low_score,4
+0.06483761007480353,few_problems | low_completion | low_effort | low_score | low_wrongs,5
+0.06462456206798599,high_completion | low_effort | low_score | low_struggle | many_problems,5
+0.06462456206798599,high_completion | low_effort | low_score | low_struggle | low_wrongs | many_problems,6
+0.06405643404980589,low_completion | low_effort | low_score | low_wrongs | typical_help,5
+0.06405643404980589,low_completion | low_effort | low_score | typical_help,4
+0.06341729002935328,high_completion | high_help | low_score | med_effort,4
+0.06327525802480825,high_completion | high_help | low_score | low_wrongs | med_effort,5
+0.06284916201117319,high_completion | low_effort | med_struggle,3
+0.06284916201117319,high_completion | low_effort | low_wrongs | med_struggle,4
+0.06258877000284065,high_completion | high_help | low_wrongs | med_problems,4
+0.06256509800208314,low_score | low_struggle | low_wrongs | many_problems | typical_help,5
+0.06256509800208314,low_score | low_struggle | many_problems | typical_help,4
+0.062423065997538114,high_completion | low_score | low_wrongs | very_high_help,4
+0.062375721996023106,few_problems | low_completion | low_struggle | typical_help,4
+0.062375721996023106,few_problems | low_completion | low_struggle | low_wrongs | typical_help,5
+0.06225736199223558,few_problems | low_completion | low_effort | low_struggle | low_wrongs | typical_help,6
+0.06225736199223558,few_problems | low_completion | low_effort | low_struggle | typical_help,5
+0.06180759397784301,high_completion | high_help | low_effort,3
+0.06180759397784301,high_completion | high_help | low_effort | low_wrongs,4
+0.061689233974055485,few_problems | med_effort,2
+0.06164188997254048,high_help | low_effort | low_struggle,3
+0.06164188997254048,high_help | low_effort | low_struggle | low_wrongs,4
+0.06159454597102547,low_score | med_struggle | typical_help,3
+0.06159454597102547,few_problems | high_completion | low_score | low_struggle | typical_help,5
+0.06159454597102547,few_problems | high_completion | low_score | low_struggle | low_wrongs | typical_help,6
+0.061428841965722944,low_score | low_wrongs | med_struggle | typical_help,4
+0.06126313796042041,high_completion | low_score | low_struggle | low_wrongs | many_problems | typical_help,6
+0.06126313796042041,high_completion | low_score | low_struggle | many_problems | typical_help,5
+0.061144777956632895,high_effort | low_wrongs,2
+0.060600321939210305,high_struggle | low_wrongs,2
+0.0605529779376953,high_completion | low_score | med_effort | med_struggle,4
+0.0605529779376953,high_help | low_effort | low_score,3
+0.0605529779376953,high_help | low_effort | low_score | low_wrongs,4
+0.06052930593693779,high_completion | low_score | low_wrongs | med_effort | med_struggle,5
+0.06048196193542278,few_problems | low_wrongs | med_effort,3
+0.060363601931635265,high_score | med_effort,2
+0.059890161916485184,high_score | low_wrongs | med_effort,3
+0.059890161916485184,low_effort | med_struggle | typical_help,3
+0.059890161916485184,low_effort | low_wrongs | med_struggle | typical_help,4
+0.05974812991194016,few_problems | med_struggle,2
+0.05953508190512262,high_completion | high_help | low_score | low_struggle | low_wrongs,5
+0.05953508190512262,high_completion | high_help | low_score | low_struggle,4
+0.058611873875579965,high_completion | high_score | med_effort,3
+0.05858820187482246,few_problems | low_wrongs | med_struggle,3
+0.058327809866489916,few_problems | low_completion | low_score | low_struggle | low_wrongs,5
+0.058327809866489916,few_problems | low_completion | low_score | low_struggle,4
+0.0582331218634599,high_completion | high_score | low_wrongs | med_effort,4
+0.05813843386042988,high_completion | high_effort | low_wrongs,3
+0.057830697850582334,few_problems | high_completion | low_effort | low_score | low_struggle | low_wrongs | typical_help,7
+0.057830697850582334,few_problems | high_completion | low_effort | low_score | low_struggle | typical_help,6
+0.05768866584603731,low_effort | low_score | low_struggle | many_problems | typical_help,5
+0.05768866584603731,low_effort | low_score | low_struggle | low_wrongs | many_problems | typical_help,6
+0.05721522583088723,high_help | many_problems,2
+0.05721522583088723,high_help | low_score | med_struggle,3
+0.05695483382255468,high_help | low_score | low_wrongs | med_struggle,4
+0.05638670580437458,high_completion | low_effort | low_score | low_struggle | many_problems | typical_help,6
+0.05638670580437458,high_completion | low_effort | low_score | low_struggle | low_wrongs | many_problems | typical_help,7
+0.05636303380361708,few_problems | high_help | low_score,3
+0.056339361802859575,high_completion | high_help | many_problems,3
+0.05596060979073951,few_problems | low_completion | low_effort | low_score | low_struggle,5
+0.05596060979073951,few_problems | low_completion | low_effort | low_score | low_struggle | low_wrongs,6
+0.05536880977180191,high_help | low_score | med_problems,3
+0.055274121768771896,few_problems | low_completion | low_score | typical_help,4
+0.05522677776725689,high_effort | very_high_help,2
+0.05513208976422687,low_completion | low_score | low_struggle | typical_help,4
+0.05513208976422687,low_completion | low_score | low_struggle | low_wrongs | typical_help,5
+0.05510841776346937,low_completion | low_effort | low_score | low_struggle | typical_help,5
+0.05510841776346937,low_completion | low_effort | low_score | low_struggle | low_wrongs | typical_help,6
+0.054966385758924347,low_score | low_struggle | med_effort,3
+0.054966385758924347,low_score | low_struggle | low_wrongs | med_effort,4
+0.05491904175740934,high_effort | high_struggle,2
+0.05446927374301676,high_help | low_wrongs | many_problems,3
+0.05394848972635167,low_score | med_problems | med_struggle,3
+0.05385380172332165,low_score | low_wrongs | med_problems | med_struggle,4
+0.053806457721806644,high_completion | low_score | med_struggle | typical_help,4
+0.05368809771801913,high_completion | low_score | low_wrongs | med_struggle | typical_help,5
+0.05366442571726162,high_completion | high_help | low_wrongs | many_problems,4
+0.053569737714231604,few_problems | low_completion | low_score | low_wrongs | typical_help,5
+0.053498721711959095,few_problems | high_completion | high_help,3
+0.05338036170817158,high_completion | high_struggle | low_wrongs,3
+0.05307262569832402,high_score | med_struggle,2
+0.0529069216930215,low_effort | low_score | low_wrongs | med_struggle,4
+0.0529069216930215,low_effort | low_score | med_struggle,3
+0.05255184168165893,high_score | low_wrongs | med_struggle,3
+0.05252816968090143,high_completion | low_score | low_struggle | low_wrongs | med_effort,5
+0.05252816968090143,high_completion | low_score | low_struggle | med_effort,4
+0.05217308966953887,high_help | low_score | low_wrongs | med_problems,4
+0.05212574566802386,few_problems | low_completion | low_effort | low_score | low_wrongs | typical_help,6
+0.05212574566802386,few_problems | low_completion | low_effort | low_score | typical_help,5
+0.05155761764984376,few_problems | high_help | low_score | low_wrongs,4
+0.05132089764226872,high_completion | low_effort | med_struggle | typical_help,4
+0.05132089764226872,high_completion | low_effort | low_wrongs | med_struggle | typical_help,5
+0.051226209639238705,high_completion | high_help | low_score | med_problems,4
+0.050989489631663665,few_problems | high_completion | med_effort,3
+0.050918473629391156,high_completion | high_help | low_score | med_struggle,4
+0.050681753621816115,high_completion | high_help | low_score | low_wrongs | med_struggle,5
+0.05049237761575608,low_score | med_effort | med_problems,3
+0.05049237761575608,few_problems | high_completion | low_wrongs | med_effort,4
+0.050160969605151026,low_score | low_wrongs | med_effort | med_problems,4
+0.050018937600606,high_completion | low_score | med_problems | med_struggle,4

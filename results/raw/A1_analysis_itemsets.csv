@@ -1,0 +1,558 @@
+support,itemset,itemset_size
+0.9960104176534448,no_explanation,1
+0.9903308552275686,no_hints,1
+0.9863418564376706,no_explanation | no_hints,2
+0.8842270276600019,no_answer,1
+0.8811546018597173,no_answer | no_explanation,2
+0.8788551941113687,no_answer | no_hints,2
+0.8757829628299697,no_answer | no_explanation | no_hints,3
+0.8283010973393902,no_wrongs,1
+0.8271462387147437,no_explanation | no_wrongs,2
+0.8245278199937793,no_hints | no_wrongs,2
+0.8233729613691328,no_explanation | no_hints | no_wrongs,3
+0.7870432526358768,no_answer | no_wrongs,2
+0.7860027711160462,no_answer | no_explanation | no_wrongs,3
+0.7846006789876225,no_answer | no_hints | no_wrongs,3
+0.783560197467792,no_answer | no_explanation | no_hints | no_wrongs,4
+0.5591529013756181,fast,1
+0.5578597398232096,fast | no_explanation,2
+0.5548672612849646,fast | no_hints,2
+0.553574099732556,fast | no_explanation | no_hints,3
+0.5085178847471712,fast | no_answer,2
+0.5074978277103435,fast | no_answer | no_explanation,3
+0.5057312071900405,fast | no_answer | no_hints,3
+0.5047111501532128,fast | no_answer | no_explanation | no_hints,4
+0.4889864379487672,fast | no_wrongs,2
+0.488418053764631,fast | no_explanation | no_wrongs,3
+0.4866152527315801,fast | no_hints | no_wrongs,3
+0.48604686854744383,fast | no_explanation | no_hints | no_wrongs,4
+0.48477704926132426,correct_first_try | no_hints,2
+0.48477704926132426,correct_first_try | no_answer,2
+0.48477704926132426,correct_first_try | no_wrongs,2
+0.48477704926132426,correct_first_try | no_answer | no_wrongs,3
+0.48477704926132426,correct_first_try | no_answer | no_hints,3
+0.48477704926132426,correct_first_try | no_hints | no_wrongs,3
+0.48477704926132426,correct_first_try,1
+0.48477704926132426,correct_first_try | no_answer | no_hints | no_wrongs,4
+0.48373656774149376,correct_first_try | no_answer | no_explanation,3
+0.48373656774149376,correct_first_try | no_explanation | no_hints,3
+0.48373656774149376,correct_first_try | no_explanation,2
+0.48373656774149376,correct_first_try | no_answer | no_explanation | no_hints | no_wrongs,5
+0.48373656774149376,correct_first_try | no_answer | no_explanation | no_hints,4
+0.48373656774149376,correct_first_try | no_explanation | no_hints | no_wrongs,4
+0.48373656774149376,correct_first_try | no_answer | no_explanation | no_wrongs,4
+0.48373656774149376,correct_first_try | no_explanation | no_wrongs,3
+0.463199458303807,fast | no_answer | no_wrongs,3
+0.4626919585309078,fast | no_answer | no_explanation | no_wrongs,4
+0.46155227237934915,fast | no_answer | no_hints | no_wrongs,4
+0.46104477260645,fast | no_answer | no_explanation | no_hints | no_wrongs,5
+0.44822325477169417,numeric,1
+0.445266956746197,no_explanation | numeric,2
+0.4406315716989805,no_hints | numeric,2
+0.4376756627112548,no_explanation | no_hints | numeric,3
+0.3645628217220796,no_answer | numeric,2
+0.36228753431556293,no_answer | no_explanation | numeric,3
+0.36024100111867813,no_answer | no_hints | numeric,3
+0.3579659082310472,no_answer | no_explanation | no_hints | numeric,4
+0.3440513887773107,no_wrongs | numeric,2
+0.34320134124662094,no_explanation | no_wrongs | numeric,3
+0.3409414208320779,no_hints | no_wrongs | numeric,3
+0.34009137330138817,no_explanation | no_hints | no_wrongs | numeric,4
+0.33928606511441894,correct_first_try | fast | no_wrongs,3
+0.33928606511441894,correct_first_try | fast | no_answer | no_hints | no_wrongs,5
+0.33928606511441894,correct_first_try | fast,2
+0.33928606511441894,correct_first_try | fast | no_hints | no_wrongs,4
+0.33928606511441894,correct_first_try | fast | no_answer | no_wrongs,4
+0.33928606511441894,correct_first_try | fast | no_answer | no_hints,4
+0.33928606511441894,correct_first_try | fast | no_hints,3
+0.33928606511441894,correct_first_try | fast | no_answer,3
+0.33877856534151973,correct_first_try | fast | no_answer | no_explanation,4
+0.33877856534151973,correct_first_try | fast | no_answer | no_explanation | no_wrongs,5
+0.33877856534151973,correct_first_try | fast | no_explanation | no_hints,4
+0.33877856534151973,correct_first_try | fast | no_explanation | no_wrongs,4
+0.33877856534151973,correct_first_try | fast | no_answer | no_explanation | no_hints | no_wrongs,6
+0.33877856534151973,correct_first_try | fast | no_answer | no_explanation | no_hints,5
+0.33877856534151973,correct_first_try | fast | no_explanation,3
+0.33877856534151973,correct_first_try | fast | no_explanation | no_hints | no_wrongs,5
+0.3130810643840005,no_answer | no_wrongs | numeric,3
+0.3123232188051522,no_answer | no_explanation | no_wrongs | numeric,4
+0.31103044629051513,no_answer | no_hints | no_wrongs | numeric,4
+0.3102726007116668,no_answer | no_explanation | no_hints | no_wrongs | numeric,5
+0.3063129742735157,correct_first_try | no_answer | no_hints | no_wrongs | numeric,5
+0.3063129742735157,correct_first_try | no_answer | no_wrongs | numeric,4
+0.3063129742735157,correct_first_try | no_hints | numeric,3
+0.3063129742735157,correct_first_try | no_wrongs | numeric,3
+0.3063129742735157,correct_first_try | no_answer | numeric,3
+0.3063129742735157,correct_first_try | no_answer | no_hints | numeric,4
+0.3063129742735157,correct_first_try | no_hints | no_wrongs | numeric,4
+0.3063129742735157,correct_first_try | numeric,2
+0.3055551286946674,correct_first_try | no_explanation | no_wrongs | numeric,4
+0.3055551286946674,correct_first_try | no_answer | no_explanation | no_hints | no_wrongs | numeric,6
+0.3055551286946674,correct_first_try | no_answer | no_explanation | no_hints | numeric,5
+0.3055551286946674,correct_first_try | no_explanation | no_hints | no_wrongs | numeric,5
+0.3055551286946674,correct_first_try | no_explanation | numeric,3
+0.3055551286946674,correct_first_try | no_explanation | no_hints | numeric,4
+0.3055551286946674,correct_first_try | no_answer | no_explanation | no_wrongs | numeric,5
+0.3055551286946674,correct_first_try | no_answer | no_explanation | numeric,4
+0.30263870704074725,open,1
+0.30262314552988795,no_hints | open,2
+0.3026212003410305,no_explanation | open,2
+0.30260583334905694,no_explanation | no_hints | open,3
+0.30217166719608224,gave_up | no_hints,2
+0.30217166719608224,gave_up | no_explanation | no_hints,3
+0.30217166719608224,gave_up | no_explanation,2
+0.30217166719608224,gave_up,1
+0.3021656371106243,gave_up | no_answer | no_explanation | no_hints,4
+0.3021656371106243,gave_up | no_answer | no_hints,3
+0.3021656371106243,gave_up | no_answer | no_explanation,3
+0.3021656371106243,gave_up | no_answer,2
+0.3010164195336643,no_answer | open,2
+0.3010135017503782,no_answer | no_hints | open,3
+0.301006888108263,no_answer | no_explanation | open,3
+0.3010039703249769,no_answer | no_explanation | no_hints | open,4
+0.3007580984533998,no_wrongs | open,2
+0.30075615326454236,no_explanation | no_wrongs | open,3
+0.3007557642267709,no_hints | no_wrongs | open,3
+0.3007538190379135,no_explanation | no_hints | no_wrongs | open,4
+0.3001473091521719,no_answer | no_wrongs | open,3
+0.3001467255955147,no_answer | no_hints | no_wrongs | open,4
+0.3001461420388575,no_answer | no_explanation | no_wrongs | open,4
+0.30014555848220026,no_answer | no_explanation | no_hints | no_wrongs | open,5
+0.2998273255851274,gave_up | no_hints | no_wrongs,3
+0.2998273255851274,gave_up | no_wrongs,2
+0.2998273255851274,gave_up | no_explanation | no_wrongs,3
+0.2998273255851274,gave_up | no_explanation | no_hints | no_wrongs,4
+0.29982362972629834,gave_up | no_answer | no_hints | no_wrongs,4
+0.29982362972629834,gave_up | no_answer | no_explanation | no_hints | no_wrongs,5
+0.29982362972629834,gave_up | no_answer | no_explanation | no_wrongs,4
+0.29982362972629834,gave_up | no_answer | no_wrongs,3
+0.2882528683268594,gave_up | open,2
+0.2882528683268594,gave_up | no_answer | no_hints | open,4
+0.2882528683268594,gave_up | no_answer | open,3
+0.2882528683268594,gave_up | no_answer | no_explanation | open,4
+0.2882528683268594,gave_up | no_answer | no_explanation | no_hints | open,5
+0.2882528683268594,gave_up | no_explanation | open,3
+0.2882528683268594,gave_up | no_hints | open,3
+0.2882528683268594,gave_up | no_explanation | no_hints | open,4
+0.28818498123573566,gave_up | no_wrongs | open,3
+0.28818498123573566,gave_up | no_answer | no_wrongs | open,4
+0.28818498123573566,gave_up | no_hints | no_wrongs | open,4
+0.28818498123573566,gave_up | no_answer | no_hints | no_wrongs | open,5
+0.28818498123573566,gave_up | no_answer | no_explanation | no_hints | no_wrongs | open,6
+0.28818498123573566,gave_up | no_answer | no_explanation | no_wrongs | open,5
+0.28818498123573566,gave_up | no_explanation | no_wrongs | open,4
+0.28818498123573566,gave_up | no_explanation | no_hints | no_wrongs | open,5
+0.27183800311580353,fast | numeric,2
+0.2708319514387492,fast | no_explanation | numeric,3
+0.2682901731587669,fast | no_hints | numeric,3
+0.2672841214817126,fast | no_explanation | no_hints | numeric,4
+0.26451864648312773,medium,1
+0.2632217890718901,medium | no_explanation,2
+0.2614720916946466,medium | no_hints,2
+0.26017523428340894,medium | no_explanation | no_hints,3
+0.2341336294170133,fast | no_wrongs | numeric,3
+0.2337268904269281,fast | no_answer | numeric,3
+0.23368934828198,fast | no_explanation | no_wrongs | numeric,4
+0.2329394779774471,fast | no_answer | no_explanation | numeric,4
+0.2321065481087026,fast | no_hints | no_wrongs | numeric,4
+0.23166226697366935,fast | no_explanation | no_hints | no_wrongs | numeric,5
+0.23139655417574664,fast | no_answer | no_hints | numeric,4
+0.23060914172626562,fast | no_answer | no_explanation | no_hints | numeric,5
+0.22741942103787885,medium | no_answer,2
+0.22644157459925707,medium | no_answer | no_explanation,3
+0.22585120978103204,medium | no_answer | no_hints,3
+0.22487336334241023,medium | no_answer | no_explanation | no_hints,4
+0.21424621305770267,fast | no_answer | no_wrongs | numeric,4
+0.21385075616299049,fast | no_answer | no_explanation | no_wrongs | numeric,5
+0.2130512835425935,correct_after_help,1
+0.2128287539373054,fast | no_answer | no_hints | no_wrongs | numeric,5
+0.21243329704259323,fast | no_answer | no_explanation | no_hints | no_wrongs | numeric,6
+0.21078066458933464,correct_first_try | fast | numeric,3
+0.21078066458933464,correct_first_try | fast | no_hints | numeric,4
+0.21078066458933464,correct_first_try | fast | no_answer | numeric,4
+0.21078066458933464,correct_first_try | fast | no_answer | no_hints | numeric,5
+0.21078066458933464,correct_first_try | fast | no_answer | no_wrongs | numeric,5
+0.21078066458933464,correct_first_try | fast | no_hints | no_wrongs | numeric,5
+0.21078066458933464,correct_first_try | fast | no_answer | no_hints | no_wrongs | numeric,6
+0.21078066458933464,correct_first_try | fast | no_wrongs | numeric,4
+0.21038520769462246,correct_first_try | fast | no_answer | no_explanation | no_hints | numeric,6
+0.21038520769462246,correct_first_try | fast | no_answer | no_explanation | no_hints | no_wrongs | numeric,7
+0.21038520769462246,correct_first_try | fast | no_answer | no_explanation | numeric,5
+0.21038520769462246,correct_first_try | fast | no_explanation | no_hints | numeric,5
+0.21038520769462246,correct_first_try | fast | no_explanation | numeric,4
+0.21038520769462246,correct_first_try | fast | no_explanation | no_wrongs | numeric,5
+0.21038520769462246,correct_first_try | fast | no_explanation | no_hints | no_wrongs | numeric,6
+0.21038520769462246,correct_first_try | fast | no_answer | no_explanation | no_wrongs | numeric,6
+0.21010218271586878,correct_after_help | no_explanation,2
+0.20702411586789757,medium | no_wrongs,2
+0.2067231951516557,medium | no_explanation | no_wrongs,3
+0.20616667661954965,medium | no_hints | no_wrongs,3
+0.20586575590330777,medium | no_explanation | no_hints | no_wrongs,4
+0.20338213877016212,correct_after_help | no_hints,2
+0.20043362150009464,correct_after_help | no_explanation | no_hints,3
+0.1976772888891396,medium | no_answer | no_wrongs,3
+0.19740710215684484,medium | no_answer | no_explanation | no_wrongs,4
+0.1971552001998098,medium | no_answer | no_hints | no_wrongs,4
+0.19688501346751505,medium | no_answer | no_explanation | no_hints | no_wrongs,5
+0.17632845214125417,slow,1
+0.1749288887583451,no_explanation | slow,2
+0.1739915022479575,no_hints | slow,2
+0.17259252242170567,no_explanation | no_hints | slow,3
+0.14828972187495199,no_answer | slow,2
+0.14727277714029616,no_answer | no_hints | slow,3
+0.14721519955011672,no_answer | no_explanation | slow,3
+0.14619844933434664,no_answer | no_explanation | no_hints | slow,4
+0.14119911945190802,few_wrongs,1
+0.13953034193113292,few_wrongs | no_explanation,2
+0.13885477784095318,correct_after_help | few_wrongs,2
+0.13718600032017808,correct_after_help | few_wrongs | no_explanation,3
+0.13715857315728855,few_wrongs | no_hints,2
+0.13589420039996974,correct_after_help | numeric,2
+0.1354899901553992,few_wrongs | no_explanation | no_hints,3
+0.1348142315463337,correct_after_help | few_wrongs | no_hints,3
+0.13369574795332093,correct_after_help | no_explanation | numeric,3
+0.13314564854444436,correct_after_help | few_wrongs | no_explanation | no_hints,4
+0.13229054352272535,no_wrongs | slow,2
+0.13200498979845704,no_explanation | no_wrongs | slow,3
+0.13174589064264955,no_hints | no_wrongs | slow,3
+0.13146033691838124,no_explanation | no_hints | no_wrongs | slow,4
+0.12830251732725603,correct_after_help | no_hints | numeric,3
+0.12649096294434678,fast | open,2
+0.12648882323660363,fast | no_explanation | open,3
+0.12648862871771788,fast | no_hints | open,3
+0.12648648900997472,fast | no_explanation | no_hints | open,4
+0.1261665054429302,no_answer | no_wrongs | slow,3
+0.1261044539183787,correct_after_help | no_explanation | no_hints | numeric,4
+0.1259671235850453,fast | no_wrongs | open,3
+0.12596673454727383,fast | no_explanation | no_wrongs | open,4
+0.12596634550950234,fast | no_hints | no_wrongs | open,4
+0.12596595647173087,fast | no_explanation | no_hints | no_wrongs | open,5
+0.1259585647540727,fast | no_answer | open,3
+0.12595817571630122,fast | no_answer | no_hints | open,4
+0.1259572031218725,fast | no_answer | no_explanation | open,4
+0.12595681408410103,fast | no_answer | no_explanation | no_hints | open,5
+0.12590371042829362,no_answer | no_explanation | no_wrongs | slow,4
+0.1258932064084636,no_answer | no_hints | no_wrongs | slow,4
+0.1256576440378308,fast | no_answer | no_wrongs | open,4
+0.1256576440378308,fast | no_answer | no_hints | no_wrongs | open,5
+0.12565744951894506,fast | no_answer | no_explanation | no_wrongs | open,5
+0.12565744951894506,fast | no_answer | no_explanation | no_hints | no_wrongs | open,6
+0.12563041139382702,no_answer | no_explanation | no_hints | no_wrongs | slow,5
+0.12336387733716872,fast | gave_up | no_explanation | no_hints,4
+0.12336387733716872,fast | gave_up,2
+0.12336387733716872,fast | gave_up | no_explanation,3
+0.12336387733716872,fast | gave_up | no_hints,3
+0.12336018147833964,fast | gave_up | no_answer | no_explanation,4
+0.12336018147833964,fast | gave_up | no_answer | no_hints,4
+0.12336018147833964,fast | gave_up | no_answer,3
+0.12336018147833964,fast | gave_up | no_answer | no_explanation | no_hints,5
+0.12226912504821637,fast | gave_up | no_wrongs,3
+0.12226912504821637,fast | gave_up | no_explanation | no_hints | no_wrongs,5
+0.12226912504821637,fast | gave_up | no_hints | no_wrongs,4
+0.12226912504821637,fast | gave_up | no_explanation | no_wrongs,4
+0.12226620726493025,fast | gave_up | no_answer | no_explanation | no_hints | no_wrongs,6
+0.12226620726493025,fast | gave_up | no_answer | no_wrongs,4
+0.12226620726493025,fast | gave_up | no_answer | no_hints | no_wrongs,5
+0.12226620726493025,fast | gave_up | no_answer | no_explanation | no_wrongs,5
+0.12062563498258765,mc,1
+0.12033891414500489,mc | no_explanation,2
+0.11981565834236063,mc | no_hints,2
+0.11952893750477787,mc | no_explanation | no_hints,3
+0.11730286337635377,fast | gave_up | no_answer | no_explanation | open,5
+0.11730286337635377,fast | gave_up | no_answer | open,4
+0.11730286337635377,fast | gave_up | no_explanation | no_hints | open,5
+0.11730286337635377,fast | gave_up | no_explanation | open,4
+0.11730286337635377,fast | gave_up | open,3
+0.11730286337635377,fast | gave_up | no_hints | open,4
+0.11730286337635377,fast | gave_up | no_answer | no_hints | open,5
+0.11730286337635377,fast | gave_up | no_answer | no_explanation | no_hints | open,6
+0.11728029918560778,fast | gave_up | no_hints | no_wrongs | open,5
+0.11728029918560778,fast | gave_up | no_answer | no_wrongs | open,5
+0.11728029918560778,fast | gave_up | no_wrongs | open,4
+0.11728029918560778,fast | gave_up | no_explanation | no_wrongs | open,5
+0.11728029918560778,fast | gave_up | no_answer | no_hints | no_wrongs | open,6
+0.11728029918560778,fast | gave_up | no_explanation | no_hints | no_wrongs | open,6
+0.11728029918560778,fast | gave_up | no_answer | no_explanation | no_hints | no_wrongs | open,7
+0.11728029918560778,fast | gave_up | no_answer | no_explanation | no_wrongs | open,6
+0.115772972339998,answer_req,1
+0.11576694225454003,answer_req | correct_after_help,2
+0.115272086209214,mc | no_answer,2
+0.1150571428404698,mc | no_answer | no_explanation,3
+0.1148558157937275,answer_req | no_explanation,2
+0.11484978570826952,answer_req | correct_after_help | no_explanation,3
+0.1148209969131798,mc | no_answer | no_hints,3
+0.11460605354443561,mc | no_answer | no_explanation | no_hints,4
+0.11271688612611554,medium | numeric,2
+0.11177677635132756,medium | no_explanation | numeric,3
+0.11147566111619994,answer_req | no_hints,2
+0.11146963103074196,answer_req | correct_after_help | no_hints,3
+0.11055889360770092,answer_req | no_explanation | no_hints,3
+0.11055286352224294,answer_req | correct_after_help | no_explanation | no_hints,4
+0.11040425109353655,medium | no_hints | numeric,3
+0.10946414131874857,medium | no_explanation | no_hints | numeric,4
+0.10368984819551638,correct_first_try | medium | no_hints | no_wrongs,4
+0.10368984819551638,correct_first_try | medium,2
+0.10368984819551638,correct_first_try | medium | no_wrongs,3
+0.10368984819551638,correct_first_try | medium | no_hints,3
+0.10368984819551638,correct_first_try | medium | no_answer | no_hints | no_wrongs,5
+0.10368984819551638,correct_first_try | medium | no_answer,3
+0.10368984819551638,correct_first_try | medium | no_answer | no_wrongs,4
+0.10368984819551638,correct_first_try | medium | no_answer | no_hints,4
+0.10341966146322164,correct_first_try | medium | no_answer | no_explanation | no_hints | no_wrongs,6
+0.10341966146322164,correct_first_try | medium | no_explanation,3
+0.10341966146322164,correct_first_try | medium | no_explanation | no_wrongs,4
+0.10341966146322164,correct_first_try | medium | no_explanation | no_hints,4
+0.10341966146322164,correct_first_try | medium | no_answer | no_explanation,4
+0.10341966146322164,correct_first_try | medium | no_answer | no_explanation | no_hints,5
+0.10341966146322164,correct_first_try | medium | no_answer | no_explanation | no_wrongs,5
+0.10341966146322164,correct_first_try | medium | no_explanation | no_hints | no_wrongs,5
+0.09728434128805348,correct_after_help | no_answer,2
+0.09650295892403045,correct_after_help | fast,2
+0.09571729714452111,correct_after_help | fast | no_explanation,3
+0.09525239700759927,correct_after_help | no_answer | no_explanation,3
+0.09420004983573853,gave_up | medium,2
+0.09420004983573853,gave_up | medium | no_hints,3
+0.09420004983573853,gave_up | medium | no_explanation,3
+0.09420004983573853,gave_up | medium | no_explanation | no_hints,4
+0.09419927176019556,gave_up | medium | no_answer | no_explanation | no_hints,5
+0.09419927176019556,gave_up | medium | no_answer,3
+0.09419927176019556,gave_up | medium | no_answer | no_hints,4
+0.09419927176019556,gave_up | medium | no_answer | no_explanation,4
+0.09346535200429341,gave_up | medium | no_explanation | no_wrongs,4
+0.09346535200429341,gave_up | medium | no_wrongs,3
+0.09346535200429341,gave_up | medium | no_answer | no_explanation | no_wrongs,5
+0.09346535200429341,gave_up | medium | no_answer | no_explanation | no_hints | no_wrongs,6
+0.09346535200429341,gave_up | medium | no_answer | no_wrongs,4
+0.09346535200429341,gave_up | medium | no_hints | no_wrongs,4
+0.09346535200429341,gave_up | medium | no_explanation | no_hints | no_wrongs,5
+0.09346535200429341,gave_up | medium | no_answer | no_hints | no_wrongs,5
+0.09266821361052534,medium | open,2
+0.09266354515726755,medium | no_explanation | open,3
+0.09266276708172458,medium | no_hints | open,3
+0.09265809862846679,medium | no_explanation | no_hints | open,4
+0.09221731883337687,correct_after_help | fast | no_hints,3
+0.09216966170637024,medium | no_answer | open,3
+0.09216868911194154,medium | no_answer | no_hints | open,4
+0.09216771651751282,medium | no_answer | no_explanation | open,4
+0.09216674392308412,medium | no_answer | no_explanation | no_hints | open,5
+0.09207123515018512,medium | no_wrongs | open,3
+0.09207084611241363,medium | no_hints | no_wrongs | open,4
+0.09207045707464215,medium | no_explanation | no_wrongs | open,4
+0.09207006803687066,medium | no_explanation | no_hints | no_wrongs | open,5
+0.09191659263602074,medium | no_answer | no_wrongs | open,4
+0.09191659263602074,medium | no_answer | no_hints | no_wrongs | open,5
+0.09191600907936351,medium | no_answer | no_explanation | no_wrongs | open,5
+0.09191600907936351,medium | no_answer | no_explanation | no_hints | no_wrongs | open,6
+0.09191250773942017,correct_after_help | no_answer | no_hints,3
+0.09143165705386753,correct_after_help | fast | no_explanation | no_hints,4
+0.0898807579778517,correct_after_help | no_answer | no_explanation | no_hints,4
+0.08968604457322459,gave_up | medium | no_answer | no_hints | open,5
+0.08968604457322459,gave_up | medium | no_explanation | no_hints | open,5
+0.08968604457322459,gave_up | medium | no_answer | no_explanation | open,5
+0.08968604457322459,gave_up | medium | no_hints | open,4
+0.08968604457322459,gave_up | medium | no_explanation | open,4
+0.08968604457322459,gave_up | medium | no_answer | open,4
+0.08968604457322459,gave_up | medium | no_answer | no_explanation | no_hints | open,6
+0.08968604457322459,gave_up | medium | open,3
+0.08966289682582138,gave_up | medium | no_explanation | no_wrongs | open,5
+0.08966289682582138,gave_up | medium | no_answer | no_wrongs | open,5
+0.08966289682582138,gave_up | medium | no_hints | no_wrongs | open,5
+0.08966289682582138,gave_up | medium | no_wrongs | open,4
+0.08966289682582138,gave_up | medium | no_answer | no_explanation | no_hints | no_wrongs | open,7
+0.08966289682582138,gave_up | medium | no_answer | no_explanation | no_wrongs | open,6
+0.08966289682582138,gave_up | medium | no_explanation | no_hints | no_wrongs | open,6
+0.08966289682582138,gave_up | medium | no_answer | no_hints | no_wrongs | open,6
+0.08846757827294073,few_wrongs | no_answer,2
+0.08714504436878524,few_wrongs | no_answer | no_explanation,3
+0.08657743826019196,medium | no_answer | numeric,3
+0.08627651754395008,few_wrongs | no_answer | no_hints,3
+0.08612557088861479,correct_after_help | few_wrongs | no_answer,3
+0.08595828464687723,mc | no_wrongs,2
+0.08590634810438429,mc | no_explanation | no_wrongs,3
+0.08587191826160806,medium | no_answer | no_explanation | numeric,4
+0.085760653458964,mc | no_hints | no_wrongs,3
+0.08570871691647106,mc | no_explanation | no_hints | no_wrongs,4
+0.08552197878615936,few_wrongs | numeric,2
+0.08535780484659365,medium | no_answer | no_hints | numeric,4
+0.08506252517803828,mc | no_answer | no_wrongs,3
+0.08501253382440274,mc | no_answer | no_explanation | no_wrongs,4
+0.08495398363979459,few_wrongs | no_answer | no_explanation | no_hints,4
+0.08489912931401554,mc | no_answer | no_hints | no_wrongs,4
+0.08484913796038,mc | no_answer | no_explanation | no_hints | no_wrongs,5
+0.0848030369844593,correct_after_help | few_wrongs | no_answer | no_explanation,4
+0.08465228484800975,medium | no_answer | no_explanation | no_hints | numeric,5
+0.08460774002317498,gave_up | no_explanation | no_hints | slow,4
+0.08460774002317498,gave_up | no_explanation | slow,3
+0.08460774002317498,gave_up | no_hints | slow,3
+0.08460774002317498,gave_up | slow,2
+0.08460618387208906,gave_up | no_answer | no_hints | slow,4
+0.08460618387208906,gave_up | no_answer | slow,3
+0.08460618387208906,gave_up | no_answer | no_explanation | no_hints | slow,5
+0.08460618387208906,gave_up | no_answer | no_explanation | slow,4
+0.08422531589380747,correct_after_help | few_wrongs | numeric,3
+0.08422473233715025,few_wrongs | no_explanation | numeric,3
+0.08409284853261761,gave_up | no_explanation | no_wrongs | slow,4
+0.08409284853261761,gave_up | no_hints | no_wrongs | slow,4
+0.08409284853261761,gave_up | no_explanation | no_hints | no_wrongs | slow,5
+0.08409284853261761,gave_up | no_wrongs | slow,3
+0.08409207045707465,gave_up | no_answer | no_wrongs | slow,4
+0.08409207045707465,gave_up | no_answer | no_explanation | no_wrongs | slow,5
+0.08409207045707465,gave_up | no_answer | no_hints | no_wrongs | slow,5
+0.08409207045707465,gave_up | no_answer | no_explanation | no_hints | no_wrongs | slow,6
+0.08393451015962414,correct_after_help | few_wrongs | no_answer | no_hints,4
+0.08366043304961457,answer_req | numeric,2
+0.08365712622855696,answer_req | correct_after_help | numeric,3
+0.08347953048587511,open | slow,2
+0.08347174973044545,no_hints | open | slow,3
+0.08346883194715933,no_explanation | open | slow,3
+0.08346124571061542,no_explanation | no_hints | open | slow,4
+0.08297942243063408,answer_req | no_explanation | numeric,3
+0.08297611560957648,answer_req | correct_after_help | no_explanation | numeric,4
+0.08292806944479836,correct_after_help | few_wrongs | no_explanation | numeric,4
+0.08288819307322139,no_answer | open | slow,3
+0.08288663692213545,no_answer | no_hints | open | slow,4
+0.08288196846887766,no_answer | no_explanation | open | slow,4
+0.08288041231779172,no_answer | no_explanation | no_hints | open | slow,5
+0.08271973971816937,no_wrongs | open | slow,3
+0.0827189616426264,no_explanation | no_wrongs | open | slow,4
+0.08271857260485492,no_hints | no_wrongs | open | slow,4
+0.08271779452931195,no_explanation | no_hints | no_wrongs | open | slow,5
+0.08261197625546865,correct_after_help | few_wrongs | no_answer | no_explanation | no_hints,5
+0.08261022558549698,correct_first_try | mc | no_hints,3
+0.08261022558549698,correct_first_try | mc | no_wrongs,3
+0.08261022558549698,correct_first_try | mc | no_answer,3
+0.08261022558549698,correct_first_try | mc | no_answer | no_hints,4
+0.08261022558549698,correct_first_try | mc | no_answer | no_wrongs,4
+0.08261022558549698,correct_first_try | mc | no_hints | no_wrongs,4
+0.08261022558549698,correct_first_try | mc | no_answer | no_hints | no_wrongs,5
+0.08261022558549698,correct_first_try | mc,2
+0.08257307247832038,no_answer | no_wrongs | open | slow,4
+0.0825726834405489,no_answer | no_explanation | no_wrongs | open | slow,5
+0.08257248892166316,no_answer | no_hints | no_wrongs | open | slow,5
+0.08257209988389168,no_answer | no_explanation | no_hints | no_wrongs | open | slow,6
+0.08256023423186146,correct_first_try | mc | no_explanation,3
+0.08256023423186146,correct_first_try | mc | no_answer | no_explanation | no_hints | no_wrongs,6
+0.08256023423186146,correct_first_try | mc | no_answer | no_explanation | no_hints,5
+0.08256023423186146,correct_first_try | mc | no_explanation | no_hints,4
+0.08256023423186146,correct_first_try | mc | no_answer | no_explanation | no_wrongs,5
+0.08256023423186146,correct_first_try | mc | no_explanation | no_hints | no_wrongs,5
+0.08256023423186146,correct_first_try | mc | no_answer | no_explanation,4
+0.08256023423186146,correct_first_try | mc | no_explanation | no_wrongs,4
+0.08251510585036946,fast | mc,2
+0.08242193130409935,fast | mc | no_explanation,3
+0.082289074905138,few_wrongs | no_hints | numeric,3
+0.08219103738672436,fast | mc | no_hints,3
+0.08209786284045424,fast | mc | no_explanation | no_hints,4
+0.08126396037728105,gave_up | no_explanation | open | slow,4
+0.08126396037728105,gave_up | no_answer | no_explanation | no_hints | open | slow,6
+0.08126396037728105,gave_up | no_explanation | no_hints | open | slow,5
+0.08126396037728105,gave_up | no_hints | open | slow,4
+0.08126396037728105,gave_up | no_answer | open | slow,4
+0.08126396037728105,gave_up | no_answer | no_hints | open | slow,5
+0.08126396037728105,gave_up | open | slow,3
+0.08126396037728105,gave_up | no_answer | no_explanation | open | slow,5
+0.08124178522430653,gave_up | no_answer | no_explanation | no_hints | no_wrongs | open | slow,7
+0.08124178522430653,gave_up | no_answer | no_wrongs | open | slow,5
+0.08124178522430653,gave_up | no_answer | no_explanation | no_wrongs | open | slow,6
+0.08124178522430653,gave_up | no_hints | no_wrongs | open | slow,5
+0.08124178522430653,gave_up | no_explanation | no_wrongs | open | slow,5
+0.08124178522430653,gave_up | no_wrongs | open | slow,4
+0.08124178522430653,gave_up | no_explanation | no_hints | no_wrongs | open | slow,6
+0.08124178522430653,gave_up | no_answer | no_hints | no_wrongs | open | slow,6
+0.08099241201278612,correct_after_help | few_wrongs | no_hints | numeric,4
+0.08099202297501464,few_wrongs | no_explanation | no_hints | numeric,4
+0.0805685553607557,fast | mc | no_answer,3
+0.0804928875142023,fast | mc | no_answer | no_explanation,4
+0.08039057058030236,answer_req | no_hints | numeric,3
+0.08038726375924475,answer_req | correct_after_help | no_hints | numeric,4
+0.08034991613318242,fast | mc | no_answer | no_hints,4
+0.08027424828662902,fast | mc | no_answer | no_explanation | no_hints,5
+0.0797097544802076,answer_req | no_explanation | no_hints | numeric,4
+0.07970644765915,answer_req | correct_after_help | no_explanation | no_hints | numeric,5
+0.07969536008266274,correct_after_help | few_wrongs | no_explanation | no_hints | numeric,5
+0.07632434779276502,medium | no_wrongs | numeric,3
+0.07611232220730695,medium | no_explanation | no_wrongs | numeric,4
+0.07564878370258529,medium | no_hints | no_wrongs | numeric,4
+0.07543675811712722,medium | no_explanation | no_hints | no_wrongs | numeric,5
+0.06955567412562302,medium | no_answer | no_wrongs | numeric,4
+0.06936796340088261,medium | no_answer | no_explanation | no_wrongs | numeric,5
+0.06913687496462188,medium | no_answer | no_hints | no_wrongs | numeric,5
+0.06894916423988147,medium | no_answer | no_explanation | no_hints | no_wrongs | numeric,6
+0.06760095384280812,correct_first_try | medium | no_hints | numeric,4
+0.06760095384280812,correct_first_try | medium | no_answer | numeric,4
+0.06760095384280812,correct_first_try | medium | no_answer | no_hints | numeric,5
+0.06760095384280812,correct_first_try | medium | no_answer | no_wrongs | numeric,5
+0.06760095384280812,correct_first_try | medium | no_answer | no_hints | no_wrongs | numeric,6
+0.06760095384280812,correct_first_try | medium | numeric,3
+0.06760095384280812,correct_first_try | medium | no_hints | no_wrongs | numeric,5
+0.06760095384280812,correct_first_try | medium | no_wrongs | numeric,4
+0.0674132431180677,correct_first_try | medium | no_answer | no_explanation | no_hints | numeric,6
+0.0674132431180677,correct_first_try | medium | no_explanation | no_hints | numeric,5
+0.0674132431180677,correct_first_try | medium | no_explanation | no_wrongs | numeric,5
+0.0674132431180677,correct_first_try | medium | no_answer | no_explanation | numeric,5
+0.0674132431180677,correct_first_try | medium | no_answer | no_explanation | no_hints | no_wrongs | numeric,7
+0.0674132431180677,correct_first_try | medium | no_explanation | numeric,4
+0.0674132431180677,correct_first_try | medium | no_explanation | no_hints | no_wrongs | numeric,6
+0.0674132431180677,correct_first_try | medium | no_answer | no_explanation | no_wrongs | numeric,6
+0.06662874845187282,correct_after_help | medium,2
+0.06560207777292994,correct_after_help | medium | no_explanation,3
+0.0636683655297751,numeric | slow,2
+0.06358219366339168,correct_after_help | medium | no_hints,3
+0.06268215477906643,fast | few_wrongs,2
+0.06265822895612023,no_explanation | numeric | slow,3
+0.0625555229844488,correct_after_help | medium | no_explanation | no_hints,4
+0.0621637619485657,fast | few_wrongs | no_explanation,3
+0.06193714744667703,no_hints | numeric | slow,3
+0.06169769469832941,fast | mc | no_wrongs,3
+0.06167104561098285,fast | mc | no_explanation | no_wrongs,4
+0.06158740249011407,correct_after_help | fast | few_wrongs,3
+0.06157475876254088,fast | mc | no_hints | no_wrongs,4
+0.06154810967519431,fast | mc | no_explanation | no_hints | no_wrongs,5
+0.06116782525356996,fast | few_wrongs | no_hints,3
+0.06114448298728099,fast | mc | no_answer | no_wrongs,4
+0.0611186119754774,fast | mc | no_answer | no_explanation | no_wrongs,5
+0.061069009659613344,correct_after_help | fast | few_wrongs | no_explanation,4
+0.06104080442118085,fast | mc | no_answer | no_hints | no_wrongs,5
+0.06101493340937725,fast | mc | no_answer | no_explanation | no_hints | no_wrongs,6
+0.06092739991079364,no_explanation | no_hints | numeric | slow,4
+0.06064943242306924,fast | few_wrongs | no_explanation | no_hints,4
+0.06028412595564697,correct_first_try | fast | mc | no_wrongs,4
+0.06028412595564697,correct_first_try | fast | mc | no_answer,4
+0.06028412595564697,correct_first_try | fast | mc,3
+0.06028412595564697,correct_first_try | fast | mc | no_hints,4
+0.06028412595564697,correct_first_try | fast | mc | no_answer | no_hints,5
+0.06028412595564697,correct_first_try | fast | mc | no_hints | no_wrongs,5
+0.06028412595564697,correct_first_try | fast | mc | no_answer | no_wrongs,5
+0.06028412595564697,correct_first_try | fast | mc | no_answer | no_hints | no_wrongs,6
+0.06025825494384337,correct_first_try | fast | mc | no_answer | no_explanation | no_hints | no_wrongs,7
+0.06025825494384337,correct_first_try | fast | mc | no_explanation | no_wrongs,5
+0.06025825494384337,correct_first_try | fast | mc | no_explanation | no_hints,5
+0.06025825494384337,correct_first_try | fast | mc | no_answer | no_explanation,5
+0.06025825494384337,correct_first_try | fast | mc | no_explanation | no_hints | no_wrongs,6
+0.06025825494384337,correct_first_try | fast | mc | no_answer | no_explanation | no_wrongs,6
+0.06025825494384337,correct_first_try | fast | mc | no_answer | no_explanation | no_hints,6
+0.06025825494384337,correct_first_try | fast | mc | no_explanation,4
+0.0600730729646176,correct_after_help | fast | few_wrongs | no_hints,4
+0.05955468013411688,correct_after_help | fast | few_wrongs | no_explanation | no_hints,5
+0.05853306694620327,algebra,1
+0.05839923795281322,correct_after_help | fast | numeric,3
+0.0581724289320388,algebra | no_explanation,2
+0.05813060737160441,algebra | no_hints,2
+0.057788643170471096,correct_after_help | fast | no_explanation | numeric,4
+0.05776996935743993,algebra | no_explanation | no_hints,3
+0.054851407995776605,correct_after_help | fast | no_hints | numeric,4
+0.054240813213434484,correct_after_help | fast | no_explanation | no_hints | numeric,5
+0.05273154117896729,answer_req | few_wrongs,2
+0.052729206952338396,answer_req | correct_after_help | few_wrongs,3
+0.05238529756234768,answer_req | few_wrongs | no_explanation,3
+0.052382963335718784,answer_req | correct_after_help | few_wrongs | no_explanation,4
+0.05223707417141277,correct_after_help | no_answer | numeric,3
+0.05088205561333847,answer_req | few_wrongs | no_hints,3
+0.05087972138670958,answer_req | correct_after_help | few_wrongs | no_hints,4
+0.050719632343744436,correct_after_help | no_answer | no_explanation | numeric,4
+0.050635016628446945,answer_req | fast,2
+0.05063132076961786,answer_req | correct_after_help | fast,3
+0.050536006515604595,answer_req | few_wrongs | no_explanation | no_hints,4
+0.0505336722889757,answer_req | correct_after_help | few_wrongs | no_explanation | no_hints,5
+0.05036191211286608,answer_req | fast | no_explanation,3
+0.050358216254037,answer_req | correct_after_help | fast | no_explanation,4

@@ -21,7 +21,7 @@
 - **Preprocessing applied:** 
   * Grouping action_logs by ['assignment_log_id', 'problem_id']
   * Binning applied (9 categories)
-  * Basketing applied (7 baskets)
+  * Basketing applied (24 items per basket)
   * One-hot encoding
   * Infrequent item filtering (support > 0.05)
 ### Transaction 2:
