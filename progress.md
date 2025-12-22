@@ -1,6 +1,6 @@
 # CSC172 Association Rule Mining Project Progress Report
 **Student:** Caine Ivan R. Bautista, 2022-0378
-**Date:** December 18, 2025  
+**Date:** December 22, 2025  
 **Repository:** https://github.com/caineirb/CSC172-AssociationMining-Bautista
 
 ## 📊 Current Status
@@ -125,5 +125,5 @@ The dataset used is not a transactional dataset as its own, it is a record of va
 - [X] Code cleanup
 - [X] Complete co-occurrence heatmap
 - [X] Create rule scatter plot 
-- [ ] Record 5-min demo video
-- [ ] Write complete README.md 
+- [X] Record 5-min demo video
+- [X] Write complete README.md 
