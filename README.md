@@ -36,7 +36,7 @@ This project applies association rule mining using the Apriori algorithm to anal
 - [7. Video Presentation](#7-video-presentation)
 - [References](#references)
 - [Appendix: Full Results](#appendix-full-results)
-
+- [Github Pages](#github-pages)
 
 
 ## 1. Introduction
@@ -638,8 +638,7 @@ The Apriori algorithm, though computationally constrained by itemset explosion, 
 
 
 ## 7. Video Presentation
-<video src="demo/CSC172_Bautista_Final.mp4" controls></video>
-[Final Presentation](demo/CSC172_Bautista_Final.mp4)
+[![Final Presentation](demo/CSC172_Bautista_Final.mp4)](demo/CSC172_Bautista_Final.mp4)
 
 ## References
 1. Agrawal, R., & Srikant, R. (1994). Fast Algorithms for Mining Association Rules. VLDB.
@@ -699,3 +698,6 @@ Located in `dataset/dataframes/` (not included in repo):
 - `unit_test_transactions.parquet` (42.2K rows)
 - `help_patterns_transactions.parquet` (204K rows)
 - ...
+
+## Github Pages
+View this project site: [https://caineirb.github.io/CSC172-AssociationMining-Bautista/](https://caineirb.github.io/CSC172-AssociationMining-Bautista/)
