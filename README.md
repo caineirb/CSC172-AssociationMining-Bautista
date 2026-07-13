@@ -393,15 +393,21 @@ rules = rules.sort_values(['lift', 'confidence'], ascending=False)
 
 **Support:** Absolute frequency of itemset occurrence
 
-$$ \text{support}(A) = \frac{|\{t \in T : A \subseteq t\}|}{|T|}​ $$
+$$
+\text{support}(A) = \frac{|\{t \in T : A \subseteq t\}|}{|T|}​
+$$
 
 **Confidence:** Conditional probability of consequent given antecedent
 
-$$ \text{confidence}(A \to B) = \frac{\text{support}(A \cup B)}{\text{support}(A)} $$
+$$
+\text{confidence}(A \to B) = \frac{\text{support}(A \cup B)}{\text{support}(A)}
+$$
 
 **Lift:** Ratio of observed to expected co-occurrence (independence baseline)
 
-$$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} = \frac{\text{support}(A \cup B)}{\text{support}(A) \times \text{support}(B)} $$
+$$
+\text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} = \frac{\text{support}(A \cup B)}{\text{support}(A) \times \text{support}(B)}
+$$
 
 **Filtering Strategy:**
 1. Generate itemsets with support ≥ 5%
