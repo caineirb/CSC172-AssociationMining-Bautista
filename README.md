@@ -1,13 +1,16 @@
 # Educational Data Mining: Student Learning Behavior Analysis using Apriori Algorithm for the EDM Cup 2023 Dataset
+
 **CSC172 Data Mining and Analysis Final Project**  
 *Mindanao State University - Iligan Institute of Technology*  
 **Student:** Caine Ivan R. Bautista, 2022-0378
 **Semester:** A.Y. 2025-2026 1st Semester
 
 ## Abstract
+
 This project applies association rule mining using the Apriori algorithm to analyze student learning behaviors in the EDM Cup 2023 dataset from ASSISTments, an online learning platform. The analysis examines three perspectives: (1) problem-solving behavior co-occurrence patterns, (2) student-unit performance prediction from aggregated behaviors, and (3) help-seeking mastery patterns. Key findings reveal that students with low help-seeking, low wrong attempts, and high completion rates show strong associations with high unit test scores (lift=3.26), while help-first strategies without prior attempts correlate with lower performance. The analysis processed 16.25M action logs and 5.14M problem attempts to generate actionable educational insights.
 
 ## Table of Contents
+
 - [Abstract](#abstract)
 - [1. Introduction](#1-introduction)
   - [1.1 Problem Statement](#11-problem-statement)
@@ -40,7 +43,9 @@ This project applies association rule mining using the Apriori algorithm to anal
 
 
 ## 1. Introduction
+
 ### 1.1 Problem Statement
+
 Educational institutions often struggle to understand which specific learning behaviors and help-seeking patterns contribute to student success or failure on assessments. While online learning platforms capture vast amounts of clickstream data, extracting actionable insights that can guide instructional interventions remains challenging. This project addresses three critical questions:
 
 1. Behavioral Co-occurrence: What problem-solving behaviors (hints, wrong attempts, time spent) naturally occur together during student work sessions?
@@ -50,6 +55,7 @@ Educational institutions often struggle to understand which specific learning be
 Understanding these relationships through association rule mining can help educators identify at-risk students early, personalize interventions, and design more effective learning pathways.
 
 ### 1.2 Objectives
+
 - Analyze three key questions using association rule mining:
   1. Which problem-solving behaviors co-occur during student work?
   2. What combinations of actions predict success/failure on unit tests?
@@ -60,6 +66,7 @@ Understanding these relationships through association rule mining can help educa
 - Visualize patterns and derive educational insights
 
 ### 1.3 Scope and Limitations
+
 **Scope:**
 - Dataset: EDM Cup 2023 training data (2018-2022 academic years)
 - Platform: ASSISTments online learning system for K-12 mathematics
@@ -74,7 +81,9 @@ Understanding these relationships through association rule mining can help educa
 - Platform-specific: Findings may not generalize to other learning management systems with different affordances
 
 ## 2. Dataset Description
+
 ### 2.1 Source and Acquisition
+
 - Source: [EDM Cup 2023 - Kaggle Competition](https://www.kaggle.com/competitions/edm-cup-2023/overview)
 - Domain: Educational clickstream data from ASSISTments online math learning platform
 - Time Period: 2018-2022 academic years (September - June cycles)
@@ -93,13 +102,16 @@ Understanding these relationships through association rule mining can help educa
 | sequence_details.csv | 10,774 |8 | 3.8 MB | Curriculum structure | 
 
 ### 2.2 Data Structure
+
 #### 2.2.1 Raw Action Log Format
+
 ```
 assignment_log_id,timestamp,problem_id,action,hint_id,explanation_id
 2QV1F2GSBZ,1599150990,I2GX4OQIE,problem_started,,
 2QV1F2GSBZ,1599150997,I2GX4OQIE,wrong_response,,
 2QV1F2GSBZ,1599151002,I2GX4OQIE,hint_requested,OEM5SD5F2,
 ```
+
 **Key Columns Used:**
 
 | Column | Type | Description | Example Values |
@@ -112,19 +124,25 @@ assignment_log_id,timestamp,problem_id,action,hint_id,explanation_id
 | `score` | binary | Unit test outcome | `0` (fail), `1` (pass) |
 
 #### 2.2.2 Transaction Formats (Post-Processing)
+
 ##### Analysis 1: Problem-Solving Behaviors
+
 ```
 # One transaction per (assignment_log_id, problem_id)
 transaction_id: "2QV1F2GSBZ_I2GX4OQIE"
 items: ['few_wrongs', 'answer_req', 'medium_time', 'correct_after_help', 'numeric']
 ```
+
 ##### Analysis 2: Unit Test Prediction
+
 ```
 # One transaction per unit_test_assignment_log_id
 transaction_id: "1KPCIEDF9V"  
 items: ['high_score', 'low_help', 'low_wrongs', 'high_completion', 'med_problems']
 ```
+
 ##### Analysis 3: Help Seeking Patterns:
+
 ```
 # One transaction per assignment_log_id (help-seekers only)
 transaction_id: "YKLKRCDDM"
@@ -132,7 +150,9 @@ items: ['rare_hints', 'low_help', 'tries_before_help', 'high_success', 'elementa
 ```
 
 ### 2.3 Sample Transactions
+
 **Analysis 1 Example (Problem Interactions):**
+
 ```python
 Transaction 794213: 
   ['no_hints', 'few_wrongs', 'slow', 'answer_req', 'no_explanation', 'correct_after_help', 'algebra']
@@ -142,6 +162,7 @@ Transaction 129199:
 ```
 
 **Analysis 2 Example (Unit Test Aggregations):**
+
 ```python
 Transaction 8914 (High Score): 
   ['high_score', 'typical_help', 'low_wrongs', 'high_completion', 'med_problems', 'low_struggle', 'low_effort']
@@ -151,6 +172,7 @@ Transaction 36923 (Low Score):
 ```
 
 **Analysis 3 Example (Help-Seeking):**
+
 ```python
 Transaction 202669 (Successful Help-Seeker): 
   ['rare_hints', 'low_help', 'no_explanation', 'some_answer_req', 'high_success', 'help_first', 'no_self_correction', 'elementary']
@@ -164,6 +186,7 @@ Transaction 17433 (Struggling Help-Seeker):
 ### 3.1 Data Preprocessing
 
 #### Step 1: Action Log Filtering
+
 - **Input:** 23,932,276 raw action logs
 - **Process:**
   1. Dropped non-essential columns: max_attempts, score_viewable, continuous_score_viewable, hint_id, explanation_id
@@ -172,6 +195,7 @@ Transaction 17433 (Struggling Help-Seeker):
 - **Output:** 16,252,841 action logs (67.9% retention)
 
 #### Step 2: Problem Details Enrichment
+
 - **Input:** 132,738 problem records
 - **Process:**
   1. Filled missing boolean flags (`problem_contains_image/equation/video`) with 0
@@ -180,7 +204,9 @@ Transaction 17433 (Struggling Help-Seeker):
 - **Output:** 132,738 × 6 enriched problem metadata
 
 #### Step 3: Feature Engineering (Analysis-Specific)
+
 1. Problem Attempt Aggregation:
+   
 ```python
 # Per (assignment_log_id, problem_id) group
 - hint_count: sum(action == 'hint_requested')
@@ -194,10 +220,12 @@ Transaction 17433 (Struggling Help-Seeker):
 - wrongs: [-0.1, 0, 2, ∞] → ['no_wrongs', 'few_wrongs', 'many_wrongs']
 - time: [q33, q66] quantiles → ['fast', 'medium', 'slow']
 ```
+
 - Chunking Strategy: Processed 1M rows at a time with buffer carryover to handle incomplete groups
 - Output: 5,140,889 problem attempts
 
 2. Unit Test Behavior Aggregation:
+   
 ```python
 # Per in-unit assignment
 - completion_rate: problems_finished / problems_started
@@ -211,10 +239,12 @@ Transaction 17433 (Struggling Help-Seeker):
 - score: [0, 0.5, 1] → ['low_score', 'high_score']
 - help: quantiles [0, .7, .9, 1] → ['typical_help', 'high_help', 'very_high_help']
 ```
+
 - Balancing: Downsampled majority class (score=1) to 187,520 samples for 1:1 ratio
 - Output: 42,244 unit test transactions (balanced)
 
 3. Help-Seeking Pattern Extraction:
+   
 ```python
 # Filter: assignments with at least one help action (hints/explanations/answers)
 - hints_per_problem: hint_count / problems_started
@@ -225,6 +255,7 @@ Transaction 17433 (Struggling Help-Seeker):
 - hint_pattern: [0, 0.5, 2, ∞] → ['rare_hints', 'moderate_hints', 'frequent_hints']
 - success_rate: [0, 0.5, 0.8, 1] → ['low_success', 'med_success', 'high_success']
 ```
+
 - **Grade Categorization:** Extracted from `sequence_folder_path_level_2`:
   - Grades 1-5 → 'elementary'
   - Grades 6-8 → 'middle'
@@ -232,6 +263,7 @@ Transaction 17433 (Struggling Help-Seeker):
 - **Output:** 204,330 help-seeking transactions (min 3 problems)
 
 #### Step 4: Transaction Encoding
+
 - **Method:** `mlxtend.TransactionEncoder()` for one-hot encoding
 - **Process:** Convert item lists to boolean matrices
 - **Output Dimensions:**
@@ -309,9 +341,11 @@ Transaction 17433 (Struggling Help-Seeker):
 
 
 ### 3.3 Apriori Algorithm Implementation
+
 **Implementation:** `mlxtend.frequent_patterns.apriori()` with `association_rules()`
 
 **Algorithm Configuration:**
+
 ```python
 from mlxtend.frequent_patterns import apriori, association_rules
 
@@ -324,6 +358,7 @@ AnalysisConfig:
 ```
 
 **Execusion Pipeline:**
+
 ```python
 # Step 1: Generate frequent itemsets
 frequent_itemsets = apriori(
@@ -355,11 +390,17 @@ rules = rules.sort_values(['lift', 'confidence'], ascending=False)
 **Hardware:** AMD Ryzen 7 5800H (16) @ 4.46 GHz, 16GB RAM, no GPU acceleration
 
 ### 3.4 Evaluation Metrics
+
 **Support:** Absolute frequency of itemset occurrence
+
 $$ \text{support}(A) = \frac{|\{t \in T : A \subseteq t\}|}{|T|}​ $$
+
 **Confidence:** Conditional probability of consequent given antecedent
+
 $$ \text{confidence}(A \to B) = \frac{\text{support}(A \cup B)}{\text{support}(A)} $$
+
 **Lift:** Ratio of observed to expected co-occurrence (independence baseline)
+
 $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} = \frac{\text{support}(A \cup B)}{\text{support}(A) \times \text{support}(B)} $$
 
 **Filtering Strategy:**
@@ -370,7 +411,9 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 5. Report top 10 for human interpretation
 
 ## 4. Results
+
 ### 4.1 Analysis 1: Student-Problem Interactions
+
 **Research Question:** Which problem-solving behaviors co-occur during student work sessions?
 
 **Top 10 Frequent Itemsets:**
@@ -416,6 +459,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 - Problem type irrelevance: No strong rules involve problem_type, suggesting behavior patterns transcend question format
 
 ### 4.2 Analysis 2: Student-Unit Aggregations
+
 **Research Question:** Which combinations of aggregated behaviors predict success/failure on unit tests?
 
 **Top 10 Frequent Itemsets:**
@@ -459,6 +503,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 - Effort-completion link: High completion_rate breaks the low_effort → few_problems cycle, suggesting completion as a key intervention target
 
 ### 4.3 Analysis 3: Help-Seeking Patterns
+
 **Research Question:** Which help-seeking patterns distinguish students achieving mastery from those struggling?
 
 **Top 10 Frequent Itemsets:**
@@ -506,9 +551,13 @@ Figure 3: (Top-left) Item support dominated by help avoidance. (Top-right) Co-oc
 - Self-correction irrelevance: self_corrects appears in few rules, suggesting observed sequences don't capture learning
 
 ## 5. Discussion
+
 ### 5.1 Educational Insights
+
 #### Cross-Analysis Synthesis:
+
 ##### 1. The "Silent Majority" Phenomenon
+
 Across all three analyses, the dominant pattern is help avoidance:
 - 87.6% of problem attempts use no help resources (Analysis 1)
 - 98.6% of help-seekers still use "low help" (<1 resource per problem) (Analysis 3)
@@ -521,6 +570,7 @@ Across all three analyses, the dominant pattern is help avoidance:
 - Self-selection: High achievers don't need help, low achievers don't seek it
 
 ##### 2. The Completion Gap
+
 Analysis 2 reveals low_completion (<70% finished) as a critical marker:
 
 - Strongly associates with few_problems, low_effort, low_score (lift 3.2×)
@@ -530,6 +580,7 @@ Analysis 2 reveals low_completion (<70% finished) as a critical marker:
 **Implication:** Early completion monitoring is more actionable than help-seeking interventions. Students who disengage early (e.g., <3 problems completed in first week) require immediate outreach.
 
 ##### 3. The Effort Paradox
+
 Rules link low_effort (minimal interactions per problem) with both success and failure:
 
 - Success pathway: {low_effort, low_wrongs, high_completion} → proficiency allows quick work
@@ -538,6 +589,7 @@ Rules link low_effort (minimal interactions per problem) with both success and f
 **Implication:** Effort must be contextualized by completion. Low effort + high completion = mastery; low effort + low completion = disengagement.
 
 ##### 4. Curriculum-Specific Patterns
+
 Analysis 3 reveals subject-grade associations:
 
 - Algebra problems in middle school → rare hints (lift 3.08×)
@@ -547,6 +599,7 @@ Analysis 3 reveals subject-grade associations:
 **Implication:** Help-seeking norms vary by developmental stage and subject. Middle school algebra may benefit from more scaffolded hint systems, while elementary needs "productive struggle" encouragement.
 
 ##### 5. The "Correct After Help" Mystery
+
 Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 
 `{correct_after_help, no_hints, no_answer} → few_wrongs (lift 6.5×)`
@@ -556,6 +609,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 - Platform logs only capture one help channel in a multi-channel ecosystem
 
 ### 5.2 Actionable Recommendations
+
 #### For Instructional Designers:
 
 1. Redesign Help Hierarchy
@@ -574,6 +628,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 - Rationale: Middle school students naturally try before help (77%); elementary can learn this
 
 #### For Teachers:
+
 1. Effort-Completion Dashboard
 - Metrics: Plot students in 2D space (completion × effort_per_problem)
 - Quadrants:
@@ -587,6 +642,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 - Rationale: Analysis 3 shows subject-grade differences in help-seeking norms
 
 #### For Platform Developers:
+
 1. Multi-Channel Help Analytics
 - Action: Add "external help" button ("I got help from: parent/friend/internet")
 - Purpose: Distinguish self-sufficiency from external support
@@ -597,7 +653,9 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 - Rationale: One-size-fits-all assignments ignore proficiency variance
 
 ### 5.3 Limitations
+
 #### Data Limitations:
+
 1. Selection Bias in Analysis 3
 - Only analyzed students who sought help (231K of 638K assignments)
 - Excludes "silent achievers" who never need help
@@ -619,6 +677,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
 - No teacher effects (instructional quality)
 
 #### Methodological Limitations:
+
 1. Cold Start Problem
 - Requires ≥3 completed problems (Analysis 2/3)
 - Misses earliest at-risk signals (students who quit after 1 problem)
@@ -630,6 +689,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
   - Face-to-face classes
 
 #### Computational Limitations:
+
 1. Memory Constraints
 - Required chunked processing for 16M+ action logs
 - Full cross-student temporal analysis infeasible
@@ -640,6 +700,7 @@ Strongest rules in Analysis 1 involve correct_after_help + help avoidance:
   - Binning boundaries (e.g., "few hints" = 0-2)
 
 ## 6. Conclusion
+
 For educators, these findings suggest prioritizing completion-based interventions over help-seeking encouragement. A proposed dashboard would classify students into four quadrants (completion × effort) to trigger differentiated responses: praise for efficient achievers, tutoring for high-effort strugglers, immediate outreach for disengaged students, and workload reduction for overwhelmed learners.
 
 For platform designers, results recommend redesigning help hierarchies to reduce friction (lighter "quick hints" vs. heavy explanations), implementing adaptive problem sets that respond to proficiency signals, and tracking external help to avoid conflating self-sufficiency with lack of social support.
@@ -648,6 +709,7 @@ The Apriori algorithm, though computationally constrained by itemset explosion, 
 
 
 ## 7. Video Presentation
+
 [![Final Presentation](demo/CSC172_Bautista_Final.mp4)](demo/CSC172_Bautista_Final.mp4)
 
 ## References
@@ -663,17 +725,21 @@ The Apriori algorithm, though computationally constrained by itemset explosion, 
 To replicate and generate the files listed below:
 
 1. Environment Setup
+2. 
 ```bash
 python -m venv ven
 source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
 ```
+
 2. Download Dataset
   - Visit https://www.kaggle.com/competitions/edm-cup-2023/data
   - Download all CSV files to `dataset/` directory
 3. Run Analysis
   - Open and run sequencially the [`notebooks/asm_apriori.ipynb`](notebooks/asm_apriori.ipynb)
+    
 ### Complete Rule Sets
+
 All raw rules and itemsets are available in [`results/raw/`](results/raw/):
 
 **Analysis 1 - Student-Problem Interactions:**
@@ -689,6 +755,7 @@ All raw rules and itemsets are available in [`results/raw/`](results/raw/):
 - Frequent itemsets: [`A3_analysis_itemsets.csv`](results/raw/A3_analysis_itemsets.csv)
 
 ### Visualization Gallery
+
 All visualizations available in [`results/vis/`](results/vis/):
 
 **Analysis 1 - Student-Problem Interactions:**
@@ -710,4 +777,5 @@ Located in `dataset/dataframes/` (not included in repo):
 - ...
 
 ## Github Pages
+
 View this project site: [https://caineirb.github.io/CSC172-AssociationMining-Bautista/](https://caineirb.github.io/CSC172-AssociationMining-Bautista/)
