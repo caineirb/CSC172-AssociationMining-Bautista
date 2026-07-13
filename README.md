@@ -82,6 +82,7 @@ Understanding these relationships through association rule mining can help educa
 - Ethics: De-identified student data with teacher/class ID for privacy
 
 **Used Dataset Files**
+
 | File | Rows | Columns | Size | Description |
 | ---- | ---- | ------- | ---- | ----------- |
 | action_logs.csv | 23,932,276 |10 |1.37 GB | Timestamped student actions |
@@ -254,6 +255,7 @@ Transaction 17433 (Struggling Help-Seeker):
 **Analysis 1 - Problem Interaction Patterns:**
 
 **Top 5 Most Frequent Items:**
+
 | Item | Support | Interpretation |
 |------|---------|----------------|
 | `no_explanation` | 99.6% | Students rarely request explanations |
@@ -274,6 +276,7 @@ Transaction 17433 (Struggling Help-Seeker):
 **Analysis 2 - Unit Test Prediction Patterns:**
 
 **Top 5 Most Frequent Items:**
+
 | Item | Support | Interpretation |
 |------|---------|----------------|
 | `low_wrongs` | 95.9% | Very few wrong attempts overall |
@@ -290,6 +293,7 @@ Transaction 17433 (Struggling Help-Seeker):
 **Analysis 3 - Help-Seeking Mastery Patterns:**
 
 **Top 5 Most Frequent Items:**
+
 | Item | Support | Interpretation |
 |------|---------|----------------|
 | `low_help` | 98.6% | Help-seekers use minimal resources |
@@ -370,6 +374,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 **Research Question:** Which problem-solving behaviors co-occur during student work sessions?
 
 **Top 10 Frequent Itemsets:**
+
 | Rank | Itemset | Support | Interpretation | 
 |-|-|-|-|
 | 1 | {no_explanation} | 0.996 | Nearly all avoid explanations | 
@@ -384,6 +389,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 | 10 | {no_hints, no_wrongs} | 0.825 | Success without hints |
  
 **Top 10 Association Rules:**
+
 | Rank | Rule | Support | Confidence | Lift | Interpretation|
 |-|-|-|-|-|-|
 | 1 | {correct_after_help, no_hints, no_answer, no_explanation} → {few_wrongs} | 0.083 | 0.919 | 6.509 | Students who succeed with no help had few errors | 
@@ -413,6 +419,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 **Research Question:** Which combinations of aggregated behaviors predict success/failure on unit tests?
 
 **Top 10 Frequent Itemsets:**
+
 | Rank | Itemset | Support | Interpretation | 
 |-|-|-|-|
 | 1 | {low_wrongs} | 0.959 | Nearly all have minimal errors | 
@@ -427,6 +434,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 | 10 | {low_effort, typical_help} | 0.614 | Standard engagement profile |
 
 **Top 10 Association Rules:**
+
 | Rank | Rule | Support | Confidence | Lift | Interpretation|
 |-|-|-|-|-|-|
 | 1 | {low_wrongs, low_struggle, typical_help, low_completion} → {low_effort, few_problems} | 0.062 | 0.803 | 3.258 | Low completion + typical help → low effort on few problems |
@@ -454,6 +462,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 **Research Question:** Which help-seeking patterns distinguish students achieving mastery from those struggling?
 
 **Top 10 Frequent Itemsets:**
+
 | Rank | Itemset | Support | Interpretation | 
 |-|-|-|-|
 | 1 | {low_help} | 0.986 | Help-seekers still use minimal resources | 
@@ -468,6 +477,7 @@ $$ \text{lift}(A \to B) = \frac{\text{confidence}(A \to B)}{\text{support}(B)} =
 | 10 | {rare_hints, tries_before_help} | 0.759 | Attempt-first + rare hints |
 
 **Top 10 Association Rules:**
+
 | Rank | Rule | Support | Confidence | Lift | Interpretation|
 |-|-|-|-|-|-|
 | 1 | {algebra, low_help} → {middle, rare_hints} | 0.050 | 0.764 | 3.082 | Middle school algebra uses minimal hints | 
